@@ -1,0 +1,316 @@
+DEBUG 2017-08-03 12:19:35,908: 	 Executing command: 'status'
+DEBUG 2017-08-03 12:19:35,909: 	 Found CRAB cache file /afs/cern.ch/user/l/lewang/.crab3
+DEBUG 2017-08-03 12:19:35,944: 	 Checking credentials
+DEBUG 2017-08-03 12:19:35,944: 	 Proxy file /tmp/x509up_u74916 not found
+DEBUG 2017-08-03 12:19:35,944: 	 Creating new proxy for 24:00 hours with VO group '' and VO role 'NULL'.
+DEBUG 2017-08-03 12:19:42,793: 	 Executing : 
+ command : voms-proxy-init -voms cms:/cms -valid 24:00 -rfc
+ output : None
+ error: None
+ retcode : 0
+DEBUG 2017-08-03 12:19:43,400: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u74916 -timeleft
+ output : 86398
+
+ error: 
+ retcode : 0
+DEBUG 2017-08-03 12:19:44,009: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u74916 -actimeleft
+ output : 86398
+
+ error: 
+ retcode : 0
+DEBUG 2017-08-03 12:19:44,618: 	 Executing : 
+ command : env X509_USER_PROXY=/tmp/x509up_u74916 voms-proxy-info -fqan
+ output : /cms/Role=NULL/Capability=NULL
+
+ error: 
+ retcode : 0
+DEBUG 2017-08-03 12:19:44,619: 	 Proxy created.
+ERROR 2017-08-03 12:19:44,625: 	 Cannot find .requestcache file in CRAB project directory /afs/cern.ch/user/l/lewang/Xudong/hltphysicsrate/CMSSW_9_2_6/src/SteamRates/HLTPhysics_Run299420_v2p1V4_PS1p4e34_20170802
+ERROR 2017-08-03 12:19:44,625: 	 Caught exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1707.patch1/bin/crab", line 160, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1707.patch1/bin/crab", line 146, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1707.patch1/lib/python2.7/site-packages/CRABClient/Commands/status.py", line 38, in __init__
+    SubCommand.__init__(self, logger, cmdargs)
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1707.patch1/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 321, in __init__
+    self.loadLocalCache(proxyOptsSetPlace)
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1707.patch1/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 450, in loadLocalCache
+    raise ex
+CachefileNotFoundException: Cannot find .requestcache file in CRAB project directory /afs/cern.ch/user/l/lewang/Xudong/hltphysicsrate/CMSSW_9_2_6/src/SteamRates/HLTPhysics_Run299420_v2p1V4_PS1p4e34_20170802
+DEBUG 2017-08-03 12:23:14,229: 	 Executing command: 'status'
+DEBUG 2017-08-03 12:23:14,229: 	 Found CRAB cache file /afs/cern.ch/user/l/lewang/.crab3
+DEBUG 2017-08-03 12:23:14,237: 	 Checking credentials
+DEBUG 2017-08-03 12:23:14,238: 	 Found proxy file /tmp/x509up_u74916
+DEBUG 2017-08-03 12:23:14,238: 	 Getting proxy life time left
+DEBUG 2017-08-03 12:23:14,950: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u74916 -timeleft
+ output : 86187
+
+ error: 
+ retcode : 0
+DEBUG 2017-08-03 12:23:15,555: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u74916 -actimeleft
+ output : 86186
+
+ error: 
+ retcode : 0
+DEBUG 2017-08-03 12:23:15,555: 	 Proxy valid for 23:56:27 hours
+ERROR 2017-08-03 12:23:15,557: 	 Cannot find .requestcache file in CRAB project directory /afs/cern.ch/user/l/lewang/Xudong/hltphysicsrate/CMSSW_9_2_6/src/SteamRates/HLTPhysics_Run299420_v2p1V4_PS1p4e34_20170802/Job_1
+ERROR 2017-08-03 12:23:15,558: 	 Caught exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1707.patch1/bin/crab", line 160, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1707.patch1/bin/crab", line 146, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1707.patch1/lib/python2.7/site-packages/CRABClient/Commands/status.py", line 38, in __init__
+    SubCommand.__init__(self, logger, cmdargs)
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1707.patch1/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 321, in __init__
+    self.loadLocalCache(proxyOptsSetPlace)
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1707.patch1/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 450, in loadLocalCache
+    raise ex
+CachefileNotFoundException: Cannot find .requestcache file in CRAB project directory /afs/cern.ch/user/l/lewang/Xudong/hltphysicsrate/CMSSW_9_2_6/src/SteamRates/HLTPhysics_Run299420_v2p1V4_PS1p4e34_20170802/Job_1
+DEBUG 2017-08-04 03:23:34,291: 	 Executing command: 'status'
+DEBUG 2017-08-04 03:23:34,291: 	 Found CRAB cache file /afs/cern.ch/user/l/lewang/.crab3
+DEBUG 2017-08-04 03:23:34,305: 	 Checking credentials
+DEBUG 2017-08-04 03:23:34,306: 	 Found proxy file /tmp/x509up_u74916
+DEBUG 2017-08-04 03:23:34,306: 	 Getting proxy life time left
+DEBUG 2017-08-04 03:23:35,013: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u74916 -timeleft
+ output : 86077
+
+ error: 
+ retcode : 0
+DEBUG 2017-08-04 03:23:35,523: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u74916 -actimeleft
+ output : 86076
+
+ error: 
+ retcode : 0
+DEBUG 2017-08-04 03:23:35,524: 	 Proxy valid for 23:54:37 hours
+ERROR 2017-08-04 03:23:35,524: 	 Cannot find .requestcache file in CRAB project directory /afs/cern.ch/user/l/lewang/Xudong/hltphysicsrate/CMSSW_9_2_6/src/SteamRates/crab_HLTPhysics_Run299420_v2p1V4_PS1p4e34_20170802_V2
+ERROR 2017-08-04 03:23:35,524: 	 Caught exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1707.patch1/bin/crab", line 160, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1707.patch1/bin/crab", line 146, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1707.patch1/lib/python2.7/site-packages/CRABClient/Commands/status.py", line 38, in __init__
+    SubCommand.__init__(self, logger, cmdargs)
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1707.patch1/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 321, in __init__
+    self.loadLocalCache(proxyOptsSetPlace)
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1707.patch1/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 450, in loadLocalCache
+    raise ex
+CachefileNotFoundException: Cannot find .requestcache file in CRAB project directory /afs/cern.ch/user/l/lewang/Xudong/hltphysicsrate/CMSSW_9_2_6/src/SteamRates/crab_HLTPhysics_Run299420_v2p1V4_PS1p4e34_20170802_V2
+DEBUG 2017-08-04 03:27:50,740: 	 Executing command: 'submit'
+DEBUG 2017-08-04 03:27:50,745: 	 Found CRAB cache file /afs/cern.ch/user/l/lewang/.crab3
+DEBUG 2017-08-04 03:27:50,765: 	 Checking credentials
+DEBUG 2017-08-04 03:27:50,766: 	 Found proxy file /tmp/x509up_u74916
+DEBUG 2017-08-04 03:27:50,766: 	 Getting proxy life time left
+DEBUG 2017-08-04 03:27:51,363: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u74916 -timeleft
+ output : 85820
+
+ error: 
+ retcode : 0
+DEBUG 2017-08-04 03:27:51,871: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u74916 -actimeleft
+ output : 85820
+
+ error: 
+ retcode : 0
+DEBUG 2017-08-04 03:27:51,872: 	 Proxy valid for 23:50:20 hours
+DEBUG 2017-08-04 03:27:51,873: 	 Will use CRAB Analysis plugin (i.e. will run an analysis job type).
+DEBUG 2017-08-04 03:28:05,657: 	 Executing command: 'submit'
+DEBUG 2017-08-04 03:28:05,668: 	 Found CRAB cache file /afs/cern.ch/user/l/lewang/.crab3
+DEBUG 2017-08-04 03:28:05,686: 	 Checking credentials
+DEBUG 2017-08-04 03:28:05,688: 	 Found proxy file /tmp/x509up_u74916
+DEBUG 2017-08-04 03:28:05,688: 	 Getting proxy life time left
+DEBUG 2017-08-04 03:28:06,294: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u74916 -timeleft
+ output : 85805
+
+ error: 
+ retcode : 0
+DEBUG 2017-08-04 03:28:06,834: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u74916 -actimeleft
+ output : 85805
+
+ error: 
+ retcode : 0
+DEBUG 2017-08-04 03:28:06,834: 	 Proxy valid for 23:50:05 hours
+DEBUG 2017-08-04 03:28:06,835: 	 Will use CRAB Analysis plugin (i.e. will run an analysis job type).
+DEBUG 2017-08-04 03:31:06,826: 	 Executing command: 'submit'
+DEBUG 2017-08-04 03:31:06,833: 	 Found CRAB cache file /afs/cern.ch/user/l/lewang/.crab3
+DEBUG 2017-08-04 03:31:06,858: 	 Checking credentials
+DEBUG 2017-08-04 03:31:06,860: 	 Found proxy file /tmp/x509up_u74916
+DEBUG 2017-08-04 03:31:06,860: 	 Getting proxy life time left
+DEBUG 2017-08-04 03:31:07,579: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u74916 -timeleft
+ output : 85624
+
+ error: 
+ retcode : 0
+DEBUG 2017-08-04 03:31:08,240: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u74916 -actimeleft
+ output : 85623
+
+ error: 
+ retcode : 0
+DEBUG 2017-08-04 03:31:08,240: 	 Proxy valid for 23:47:04 hours
+DEBUG 2017-08-04 03:31:08,242: 	 Will use CRAB Analysis plugin (i.e. will run an analysis job type).
+DEBUG 2017-08-04 03:31:08,266: 	 Executing command: 'submit'
+DEBUG 2017-08-04 03:31:08,272: 	 Found CRAB cache file /afs/cern.ch/user/l/lewang/.crab3
+DEBUG 2017-08-04 03:31:08,281: 	 Checking credentials
+DEBUG 2017-08-04 03:31:08,282: 	 Found proxy file /tmp/x509up_u74916
+DEBUG 2017-08-04 03:31:08,282: 	 Getting proxy life time left
+DEBUG 2017-08-04 03:31:08,844: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u74916 -timeleft
+ output : 85623
+
+ error: 
+ retcode : 0
+DEBUG 2017-08-04 03:31:10,343: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u74916 -actimeleft
+ output : 85622
+
+ error: 
+ retcode : 0
+DEBUG 2017-08-04 03:31:10,344: 	 Proxy valid for 23:47:03 hours
+DEBUG 2017-08-04 03:31:10,347: 	 Will use CRAB Analysis plugin (i.e. will run an analysis job type).
+DEBUG 2017-08-04 03:31:10,376: 	 Executing command: 'submit'
+DEBUG 2017-08-04 03:31:10,379: 	 Found CRAB cache file /afs/cern.ch/user/l/lewang/.crab3
+DEBUG 2017-08-04 03:31:10,387: 	 Checking credentials
+DEBUG 2017-08-04 03:31:10,387: 	 Found proxy file /tmp/x509up_u74916
+DEBUG 2017-08-04 03:31:10,387: 	 Getting proxy life time left
+DEBUG 2017-08-04 03:31:11,020: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u74916 -timeleft
+ output : 85620
+
+ error: 
+ retcode : 0
+DEBUG 2017-08-04 03:31:11,637: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u74916 -actimeleft
+ output : 85620
+
+ error: 
+ retcode : 0
+DEBUG 2017-08-04 03:31:11,638: 	 Proxy valid for 23:47:00 hours
+DEBUG 2017-08-04 03:31:11,639: 	 Will use CRAB Analysis plugin (i.e. will run an analysis job type).
+DEBUG 2017-08-04 03:31:11,666: 	 Executing command: 'submit'
+DEBUG 2017-08-04 03:31:11,674: 	 Found CRAB cache file /afs/cern.ch/user/l/lewang/.crab3
+DEBUG 2017-08-04 03:31:11,686: 	 Checking credentials
+DEBUG 2017-08-04 03:31:11,687: 	 Found proxy file /tmp/x509up_u74916
+DEBUG 2017-08-04 03:31:11,687: 	 Getting proxy life time left
+DEBUG 2017-08-04 03:31:12,426: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u74916 -timeleft
+ output : 85619
+
+ error: 
+ retcode : 0
+DEBUG 2017-08-04 03:31:13,286: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u74916 -actimeleft
+ output : 85618
+
+ error: 
+ retcode : 0
+DEBUG 2017-08-04 03:31:13,286: 	 Proxy valid for 23:46:59 hours
+DEBUG 2017-08-04 03:31:13,287: 	 Will use CRAB Analysis plugin (i.e. will run an analysis job type).
+DEBUG 2017-08-04 03:31:13,312: 	 Executing command: 'submit'
+DEBUG 2017-08-04 03:31:13,318: 	 Found CRAB cache file /afs/cern.ch/user/l/lewang/.crab3
+DEBUG 2017-08-04 03:31:13,327: 	 Checking credentials
+DEBUG 2017-08-04 03:31:13,328: 	 Found proxy file /tmp/x509up_u74916
+DEBUG 2017-08-04 03:31:13,329: 	 Getting proxy life time left
+DEBUG 2017-08-04 03:31:14,065: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u74916 -timeleft
+ output : 85617
+
+ error: 
+ retcode : 0
+DEBUG 2017-08-04 03:31:14,769: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u74916 -actimeleft
+ output : 85617
+
+ error: 
+ retcode : 0
+DEBUG 2017-08-04 03:31:14,770: 	 Proxy valid for 23:46:57 hours
+DEBUG 2017-08-04 03:31:14,771: 	 Will use CRAB Analysis plugin (i.e. will run an analysis job type).
+DEBUG 2017-08-04 03:31:14,786: 	 Executing command: 'submit'
+DEBUG 2017-08-04 03:31:14,789: 	 Found CRAB cache file /afs/cern.ch/user/l/lewang/.crab3
+DEBUG 2017-08-04 03:31:14,796: 	 Checking credentials
+DEBUG 2017-08-04 03:31:14,796: 	 Found proxy file /tmp/x509up_u74916
+DEBUG 2017-08-04 03:31:14,797: 	 Getting proxy life time left
+DEBUG 2017-08-04 03:31:15,479: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u74916 -timeleft
+ output : 85616
+
+ error: 
+ retcode : 0
+DEBUG 2017-08-04 03:31:16,067: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u74916 -actimeleft
+ output : 85615
+
+ error: 
+ retcode : 0
+DEBUG 2017-08-04 03:31:16,067: 	 Proxy valid for 23:46:56 hours
+DEBUG 2017-08-04 03:31:16,068: 	 Will use CRAB Analysis plugin (i.e. will run an analysis job type).
+DEBUG 2017-08-04 03:31:16,098: 	 Executing command: 'submit'
+DEBUG 2017-08-04 03:31:16,104: 	 Found CRAB cache file /afs/cern.ch/user/l/lewang/.crab3
+DEBUG 2017-08-04 03:31:16,112: 	 Checking credentials
+DEBUG 2017-08-04 03:31:16,112: 	 Found proxy file /tmp/x509up_u74916
+DEBUG 2017-08-04 03:31:16,113: 	 Getting proxy life time left
+DEBUG 2017-08-04 03:31:16,774: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u74916 -timeleft
+ output : 85615
+
+ error: 
+ retcode : 0
+DEBUG 2017-08-04 03:31:17,637: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u74916 -actimeleft
+ output : 85614
+
+ error: 
+ retcode : 0
+DEBUG 2017-08-04 03:31:17,638: 	 Proxy valid for 23:46:55 hours
+DEBUG 2017-08-04 03:31:17,639: 	 Will use CRAB Analysis plugin (i.e. will run an analysis job type).
+DEBUG 2017-08-04 03:31:17,669: 	 Executing command: 'submit'
+DEBUG 2017-08-04 03:31:17,672: 	 Found CRAB cache file /afs/cern.ch/user/l/lewang/.crab3
+DEBUG 2017-08-04 03:31:17,680: 	 Checking credentials
+DEBUG 2017-08-04 03:31:17,681: 	 Found proxy file /tmp/x509up_u74916
+DEBUG 2017-08-04 03:31:17,681: 	 Getting proxy life time left
+DEBUG 2017-08-04 03:31:18,339: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u74916 -timeleft
+ output : 85613
+
+ error: 
+ retcode : 0
+DEBUG 2017-08-04 03:31:18,989: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u74916 -actimeleft
+ output : 85613
+
+ error: 
+ retcode : 0
+DEBUG 2017-08-04 03:31:18,990: 	 Proxy valid for 23:46:53 hours
+DEBUG 2017-08-04 03:31:18,991: 	 Will use CRAB Analysis plugin (i.e. will run an analysis job type).
+DEBUG 2017-08-04 04:35:45,470: 	 Executing command: 'submit'
+DEBUG 2017-08-04 04:35:45,478: 	 Found CRAB cache file /afs/cern.ch/user/l/lewang/.crab3
+DEBUG 2017-08-04 04:35:45,493: 	 Checking credentials
+DEBUG 2017-08-04 04:35:45,494: 	 Found proxy file /tmp/x509up_u74916
+DEBUG 2017-08-04 04:35:45,494: 	 Getting proxy life time left
+DEBUG 2017-08-04 04:35:46,658: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u74916 -timeleft
+ output : 81745
+
+ error: 
+ retcode : 0
+DEBUG 2017-08-04 04:35:47,177: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u74916 -actimeleft
+ output : 81744
+
+ error: 
+ retcode : 0
+DEBUG 2017-08-04 04:35:47,178: 	 Proxy valid for 22:42:25 hours
+DEBUG 2017-08-04 04:35:47,178: 	 Will use CRAB Analysis plugin (i.e. will run an analysis job type).

@@ -1,0 +1,175 @@
+DEBUG 2017-08-04 16:37:16,573: 	 Executing command: 'submit'
+DEBUG 2017-08-04 16:37:16,579: 	 Found CRAB cache file /afs/cern.ch/user/l/lewang/.crab3
+DEBUG 2017-08-04 16:37:16,590: 	 Checking credentials
+DEBUG 2017-08-04 16:37:16,591: 	 Found proxy file /tmp/x509up_u74916
+DEBUG 2017-08-04 16:37:16,591: 	 Getting proxy life time left
+DEBUG 2017-08-04 16:37:17,308: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u74916 -timeleft
+ output : 82065
+
+ error: 
+ retcode : 0
+DEBUG 2017-08-04 16:37:17,949: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u74916 -actimeleft
+ output : 82065
+
+ error: 
+ retcode : 0
+DEBUG 2017-08-04 16:37:17,949: 	 Proxy valid for 22:47:45 hours
+DEBUG 2017-08-04 16:37:17,950: 	 Will use CRAB Analysis plugin (i.e. will run an analysis job type).
+DEBUG 2017-08-04 16:37:18,020: 	 Executing : 
+ command : openssl x509 -in ~/.globus/usercert.pem -subject -noout
+ output : subject= /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=lewang/CN=763351/CN=Lei Wang
+
+ error: 
+ retcode : 0
+DEBUG 2017-08-04 16:37:18,020: 	 Checking credentials
+DEBUG 2017-08-04 16:37:18,021: 	 Found proxy file /tmp/x509up_u74916
+DEBUG 2017-08-04 16:37:18,021: 	 Getting proxy life time left
+DEBUG 2017-08-04 16:37:18,678: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u74916 -timeleft
+ output : 82064
+
+ error: 
+ retcode : 0
+DEBUG 2017-08-04 16:37:19,425: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u74916 -actimeleft
+ output : 82063
+
+ error: 
+ retcode : 0
+DEBUG 2017-08-04 16:37:19,426: 	 Proxy valid for 22:47:44 hours
+DEBUG 2017-08-04 16:37:20,130: 	 Executing : 
+ command : env X509_USER_PROXY=/tmp/x509up_u74916 voms-proxy-info -fqan
+ output : /cms/Role=NULL/Capability=NULL
+
+ error: 
+ retcode : 0
+DEBUG 2017-08-04 16:37:20,967: 	 Registering user credentials for server /DC=ch/DC=cern/OU=computers/CN=vocms(045|052|021|031|0118|0118a|0119|0108|0105|0109).cern.ch
+DEBUG 2017-08-04 16:37:21,045: 	 Executing : 
+ command : openssl x509 -in ~/.globus/usercert.pem -subject -noout
+ output : subject= /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=lewang/CN=763351/CN=Lei Wang
+
+ error: 
+ retcode : 0
+DEBUG 2017-08-04 16:37:21,045: 	 Getting myproxy life time left for myproxy.cern.ch
+DEBUG 2017-08-04 16:37:21,045: 	 Calculating hash of /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=lewang/CN=763351/CN=Lei Wang_cmsweb.cern.ch for credential name
+DEBUG 2017-08-04 16:37:21,259: 	 Executing : 
+ command : myproxy-info -l 1b9ed1fd5af45f6b0603ad12c45a57a42d266ac3 -s myproxy.cern.ch
+ output : username: 1b9ed1fd5af45f6b0603ad12c45a57a42d266ac3
+owner: /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=lewang/CN=763351/CN=Lei Wang
+  renewal policy: /DC=ch/DC=cern/OU=computers/CN=vocms(045|052|021|031|0118|0118a|0119|0108|0105|0109).cern.ch
+  trusted retrieval policy: /DC=ch/DC=cern/OU=computers/CN=vocms(045|052|021|031|0118|0118a|0119|0108|0105|0109).cern.ch
+  timeleft: 706:41:00  (29.4 days)
+
+ error: 
+ retcode : 0
+DEBUG 2017-08-04 16:37:21,261: 	 Myproxy is valid: 2544060
+DEBUG 2017-08-04 16:37:21,261: 	 Command use: submit
+DEBUG 2017-08-04 16:37:21,261: 	 Options use: ['--config', <WMCore.Configuration.Configuration object at 0x7f8589d74690>]
+DEBUG 2017-08-04 16:37:21,794: 	 CRABClient version: 3.3.1707.patch1
+DEBUG 2017-08-04 16:37:21,794: 	 Instance is prod
+DEBUG 2017-08-04 16:37:21,794: 	 Server base url is cmsweb.cern.ch
+DEBUG 2017-08-04 16:37:21,794: 	 Command url /crabserver/prod/workflow
+DEBUG 2017-08-04 16:37:21,794: 	 Started submission
+DEBUG 2017-08-04 16:37:21,794: 	 Working on /afs/cern.ch/user/l/lewang/Xudong/hltphysicsrate/CMSSW_9_2_6/src/SteamRates/crab_HLTPhysics_Run299420_v2p1V4_PS1p4e34_20170802_V2/crab_HLTPhysics6
+DEBUG 2017-08-04 16:37:22,412: 	 Loading required information from the environment
+DEBUG 2017-08-04 16:37:22,412: 	 Found CMSSW_9_2_6 for slc6_amd64_gcc530 with base /afs/cern.ch/user/l/lewang/Xudong/hltphysicsrate/CMSSW_9_2_6
+DEBUG 2017-08-04 16:37:22,412: 	 Loading required information from the environment
+DEBUG 2017-08-04 16:37:22,412: 	 Found CMSSW_9_2_6 for slc6_amd64_gcc530 with base /afs/cern.ch/user/l/lewang/Xudong/hltphysicsrate/CMSSW_9_2_6
+DEBUG 2017-08-04 16:37:22,441: 	 UNIQUE NAME: tarUUID b18544ae-17e4-496c-9337-83994e26bc18 
+DEBUG 2017-08-04 16:37:22,442: 	 self.config: from WMCore.Configuration import Configuration
+config = Configuration()
+config.section_('General')
+config.General.transferLogs = True
+config.General.workArea = 'crab_HLTPhysics_Run299420_v2p1V4_PS1p4e34_20170802_V2'
+config.General.requestName = 'HLTPhysics6'
+config.section_('JobType')
+config.JobType.psetName = 'hlt_Minotaur_v2p1V4_PS1p4e34.py'
+config.JobType.pluginName = 'Analysis'
+config.JobType.outputFiles = ['hlt.root']
+config.JobType.numCores = 4
+config.JobType.maxMemoryMB = 3000
+config.section_('Data')
+config.Data.inputDataset = '/ParkingHLTPhysics6/Run2017C-v1/RAW'
+config.Data.outputDatasetTag = 'HLTPhysics_Run299420_v2p1V4_PS1p4e34_20170802_V2_HLTPhysics6'
+config.Data.publication = False
+config.Data.unitsPerJob = 5000
+config.Data.inputDBS = 'global'
+config.Data.splitting = 'EventAwareLumiBased'
+config.Data.outLFNDirBase = '/store/group/dpg_trigger/comm_trigger/TriggerStudiesGroup/STEAM/xulyu//HLTPhysics_Run299420_v2p1V4_PS1p4e34_20170802_V2/'
+config.Data.lumiMask = 'json_299420_LS11to50.txt'
+config.Data.totalUnits = -1
+config.section_('Site')
+config.Site.storageSite = 'T2_CH_CERN'
+config.section_('User')
+config.section_('Debug')
+
+DEBUG 2017-08-04 16:37:22,442: 	 self.config.JobType.psetName: hlt_Minotaur_v2p1V4_PS1p4e34.py
+INFO 2017-08-04 16:37:22,442: 	 Importing CMSSW configuration hlt_Minotaur_v2p1V4_PS1p4e34.py
+INFO 2017-08-04 16:37:25,172: 	 Finished importing CMSSW configuration hlt_Minotaur_v2p1V4_PS1p4e34.py
+DEBUG 2017-08-04 16:37:25,172: 	 Writing CMSSW configuration to /afs/cern.ch/user/l/lewang/Xudong/hltphysicsrate/CMSSW_9_2_6/src/SteamRates/crab_HLTPhysics_Run299420_v2p1V4_PS1p4e34_20170802_V2/crab_HLTPhysics6/inputs/PSet.py
+DEBUG 2017-08-04 16:37:30,172: 	 The following EDM output files will be collected: ['hlt.root']
+DEBUG 2017-08-04 16:37:30,173: 	 The following TFile output files will be collected: []
+DEBUG 2017-08-04 16:37:30,173: 	 The following user output files will be collected: []
+DEBUG 2017-08-04 16:37:30,173: 	 Loading required information from the environment
+DEBUG 2017-08-04 16:37:30,173: 	 Found CMSSW_9_2_6 for slc6_amd64_gcc530 with base /afs/cern.ch/user/l/lewang/Xudong/hltphysicsrate/CMSSW_9_2_6
+DEBUG 2017-08-04 16:37:30,173: 	 Making tarball in /afs/cern.ch/user/l/lewang/Xudong/hltphysicsrate/CMSSW_9_2_6/src/SteamRates/crab_HLTPhysics_Run299420_v2p1V4_PS1p4e34_20170802_V2/crab_HLTPhysics6/inputs/b18544ae-17e4-496c-9337-83994e26bc18default.tgz
+DEBUG 2017-08-04 16:37:30,274: 	 Checking directory /afs/cern.ch/user/l/lewang/Xudong/hltphysicsrate/CMSSW_9_2_6/lib
+DEBUG 2017-08-04 16:37:30,274: 	 Adding directory /afs/cern.ch/user/l/lewang/Xudong/hltphysicsrate/CMSSW_9_2_6/lib to tarball
+DEBUG 2017-08-04 16:37:36,482: 	 Checking directory /afs/cern.ch/user/l/lewang/Xudong/hltphysicsrate/CMSSW_9_2_6/biglib
+DEBUG 2017-08-04 16:37:36,482: 	 Adding directory /afs/cern.ch/user/l/lewang/Xudong/hltphysicsrate/CMSSW_9_2_6/biglib to tarball
+DEBUG 2017-08-04 16:37:39,339: 	 Checking directory /afs/cern.ch/user/l/lewang/Xudong/hltphysicsrate/CMSSW_9_2_6/module
+DEBUG 2017-08-04 16:37:39,445: 	 Adding data directory /afs/cern.ch/user/l/lewang/Xudong/hltphysicsrate/CMSSW_9_2_6/src/CondCore/ESSources/interface to tarball
+DEBUG 2017-08-04 16:37:39,452: 	 Adding data directory /afs/cern.ch/user/l/lewang/Xudong/hltphysicsrate/CMSSW_9_2_6/src/CondFormats/DataRecord/interface to tarball
+DEBUG 2017-08-04 16:37:39,654: 	 Adding data directory /afs/cern.ch/user/l/lewang/Xudong/hltphysicsrate/CMSSW_9_2_6/src/CondTools/L1TriggerExt/interface to tarball
+DEBUG 2017-08-04 16:37:39,672: 	 Adding data directory /afs/cern.ch/user/l/lewang/Xudong/hltphysicsrate/CMSSW_9_2_6/src/Configuration/PyReleaseValidation/data to tarball
+DEBUG 2017-08-04 16:37:39,677: 	 Adding data directory /afs/cern.ch/user/l/lewang/Xudong/hltphysicsrate/CMSSW_9_2_6/src/Configuration/Skimming/interface to tarball
+DEBUG 2017-08-04 16:37:39,689: 	 Adding data directory /afs/cern.ch/user/l/lewang/Xudong/hltphysicsrate/CMSSW_9_2_6/src/DQM/L1TMonitor/interface to tarball
+DEBUG 2017-08-04 16:37:39,715: 	 Adding data directory /afs/cern.ch/user/l/lewang/Xudong/hltphysicsrate/CMSSW_9_2_6/src/DataFormats/L1TMuon/interface to tarball
+DEBUG 2017-08-04 16:37:39,733: 	 Adding data directory /afs/cern.ch/user/l/lewang/Xudong/hltphysicsrate/CMSSW_9_2_6/src/EventFilter/L1TRawToDigi/interface to tarball
+DEBUG 2017-08-04 16:37:39,747: 	 Adding data directory /afs/cern.ch/user/l/lewang/Xudong/hltphysicsrate/CMSSW_9_2_6/src/L1Trigger/L1TCalorimeter/interface to tarball
+DEBUG 2017-08-04 16:37:39,780: 	 Adding data directory /afs/cern.ch/user/l/lewang/Xudong/hltphysicsrate/CMSSW_9_2_6/src/L1Trigger/L1TCalorimeter/data to tarball
+DEBUG 2017-08-04 16:37:39,789: 	 Adding data directory /afs/cern.ch/user/l/lewang/Xudong/hltphysicsrate/CMSSW_9_2_6/src/L1Trigger/L1TMuon/interface to tarball
+DEBUG 2017-08-04 16:37:39,806: 	 Adding data directory /afs/cern.ch/user/l/lewang/Xudong/hltphysicsrate/CMSSW_9_2_6/src/L1Trigger/L1TMuon/data to tarball
+DEBUG 2017-08-04 16:37:42,489: 	 Adding data directory /afs/cern.ch/user/l/lewang/Xudong/hltphysicsrate/CMSSW_9_2_6/src/L1Trigger/L1TMuonBarrel/interface to tarball
+DEBUG 2017-08-04 16:37:42,495: 	 Adding data directory /afs/cern.ch/user/l/lewang/Xudong/hltphysicsrate/CMSSW_9_2_6/src/L1Trigger/L1TMuonEndCap/interface to tarball
+DEBUG 2017-08-04 16:37:42,517: 	 Adding data directory /afs/cern.ch/user/l/lewang/Xudong/hltphysicsrate/CMSSW_9_2_6/src/L1Trigger/L1TCommon/interface to tarball
+DEBUG 2017-08-04 16:37:42,523: 	 Adding data directory /afs/cern.ch/user/l/lewang/Xudong/hltphysicsrate/CMSSW_9_2_6/src/L1Trigger/L1TGlobal/interface to tarball
+DEBUG 2017-08-04 16:37:42,544: 	 Adding data directory /afs/cern.ch/user/l/lewang/Xudong/hltphysicsrate/CMSSW_9_2_6/src/L1Trigger/L1TGlobal/data to tarball
+DEBUG 2017-08-04 16:37:42,897: 	 Adding data directory /afs/cern.ch/user/l/lewang/Xudong/hltphysicsrate/CMSSW_9_2_6/src/L1Trigger/L1TMuonOverlap/interface to tarball
+DEBUG 2017-08-04 16:37:42,906: 	 Adding data directory /afs/cern.ch/user/l/lewang/Xudong/hltphysicsrate/CMSSW_9_2_6/src/L1Trigger/L1TNtuples/interface to tarball
+DEBUG 2017-08-04 16:37:42,946: 	 Adding data directory /afs/cern.ch/user/l/lewang/Xudong/hltphysicsrate/CMSSW_9_2_6/src/Utilities/ReleaseScripts/data to tarball
+DEBUG 2017-08-04 16:37:42,958: 	 Adding data directory /afs/cern.ch/user/l/lewang/Xudong/hltphysicsrate/CMSSW_9_2_6/src/Alignment/MillePedeAlignmentAlgorithm/interface to tarball
+DEBUG 2017-08-04 16:37:42,974: 	 Adding data directory /afs/cern.ch/user/l/lewang/Xudong/hltphysicsrate/CMSSW_9_2_6/src/DQMOffline/L1Trigger/interface to tarball
+DEBUG 2017-08-04 16:37:42,987: 	 Adding data directory /afs/cern.ch/user/l/lewang/Xudong/hltphysicsrate/CMSSW_9_2_6/src/Fireworks/FWInterface/interface to tarball
+DEBUG 2017-08-04 16:37:42,990: 	 Adding data directory /afs/cern.ch/user/l/lewang/Xudong/hltphysicsrate/CMSSW_9_2_6/src/Fireworks/Geometry/data to tarball
+DEBUG 2017-08-04 16:37:42,991: 	 Adding data directory /afs/cern.ch/user/l/lewang/Xudong/hltphysicsrate/CMSSW_9_2_6/src/Fireworks/Geometry/interface to tarball
+DEBUG 2017-08-04 16:37:42,997: 	 Adding data directory /afs/cern.ch/user/l/lewang/Xudong/hltphysicsrate/CMSSW_9_2_6/src/Geometry/HGCalGeometry/interface to tarball
+DEBUG 2017-08-04 16:37:43,001: 	 Adding data directory /afs/cern.ch/user/l/lewang/Xudong/hltphysicsrate/CMSSW_9_2_6/src/Geometry/HcalCommonData/data to tarball
+DEBUG 2017-08-04 16:37:43,073: 	 Adding data directory /afs/cern.ch/user/l/lewang/Xudong/hltphysicsrate/CMSSW_9_2_6/src/Geometry/HcalCommonData/interface to tarball
+DEBUG 2017-08-04 16:37:43,081: 	 Adding data directory /afs/cern.ch/user/l/lewang/Xudong/hltphysicsrate/CMSSW_9_2_6/src/PhysicsTools/PatAlgos/interface to tarball
+DEBUG 2017-08-04 16:37:43,101: 	 Adding data directory /afs/cern.ch/user/l/lewang/Xudong/hltphysicsrate/CMSSW_9_2_6/src/RecoEgamma/EgammaHLTProducers/interface to tarball
+DEBUG 2017-08-04 16:37:43,124: 	 Adding data directory /afs/cern.ch/user/l/lewang/Xudong/hltphysicsrate/CMSSW_9_2_6/src/SimG4CMS/Calo/data to tarball
+DEBUG 2017-08-04 16:37:43,141: 	 Adding data directory /afs/cern.ch/user/l/lewang/Xudong/hltphysicsrate/CMSSW_9_2_6/src/SimG4CMS/Calo/interface to tarball
+DEBUG 2017-08-04 16:37:43,165: 	 Adding data directory /afs/cern.ch/user/l/lewang/Xudong/hltphysicsrate/CMSSW_9_2_6/src/SimG4CMS/Forward/data to tarball
+DEBUG 2017-08-04 16:37:43,169: 	 Adding data directory /afs/cern.ch/user/l/lewang/Xudong/hltphysicsrate/CMSSW_9_2_6/src/SimG4CMS/Forward/interface to tarball
+DEBUG 2017-08-04 16:37:43,187: 	 Adding data directory /afs/cern.ch/user/l/lewang/Xudong/hltphysicsrate/CMSSW_9_2_6/src/SimG4CMS/Forward/test/data to tarball
+DEBUG 2017-08-04 16:37:43,192: 	 Adding data directory /afs/cern.ch/user/l/lewang/Xudong/hltphysicsrate/CMSSW_9_2_6/src/Validation/Performance/data to tarball
+DEBUG 2017-08-04 16:37:43,195: 	 Adding data directory /afs/cern.ch/user/l/lewang/Xudong/hltphysicsrate/CMSSW_9_2_6/src/Validation/Performance/interface to tarball
+DEBUG 2017-08-04 16:37:44,380: 	 Uploading archive /afs/cern.ch/user/l/lewang/Xudong/hltphysicsrate/CMSSW_9_2_6/src/SteamRates/crab_HLTPhysics_Run299420_v2p1V4_PS1p4e34_20170802_V2/crab_HLTPhysics6/inputs/b18544ae-17e4-496c-9337-83994e26bc18default.tgz (28 MB) to the CRAB cache. Using URI https://cmsweb.cern.ch/crabcache
+DEBUG 2017-08-04 16:37:53,532: 	 Loading required information from the environment
+DEBUG 2017-08-04 16:37:53,532: 	 Found CMSSW_9_2_6 for slc6_amd64_gcc530 with base /afs/cern.ch/user/l/lewang/Xudong/hltphysicsrate/CMSSW_9_2_6
+DEBUG 2017-08-04 16:37:53,532: 	 Making tarball in /afs/cern.ch/user/l/lewang/Xudong/hltphysicsrate/CMSSW_9_2_6/src/SteamRates/crab_HLTPhysics_Run299420_v2p1V4_PS1p4e34_20170802_V2/crab_HLTPhysics6/inputs/debugFiles.tgz
+DEBUG 2017-08-04 16:37:53,735: 	 Uploading archive /afs/cern.ch/user/l/lewang/Xudong/hltphysicsrate/CMSSW_9_2_6/src/SteamRates/crab_HLTPhysics_Run299420_v2p1V4_PS1p4e34_20170802_V2/crab_HLTPhysics6/inputs/debugFiles.tgz (282 KB) to the CRAB cache. Using URI https://cmsweb.cern.ch/crabcache
+DEBUG 2017-08-04 16:37:54,335: 	 Result uploading input files: 4c1f1967ded8a27e2abc2bf8f3fceec37ed121044716c75e24d0eeff0ec64bd5.tar.gz 
+DEBUG 2017-08-04 16:37:54,336: 	 Attaching lumi mask json_299420_LS11to50.txt to the request
+DEBUG 2017-08-04 16:37:54,336: 	 Reading lumi-mask from json_299420_LS11to50.txt
+INFO 2017-08-04 16:37:54,337: 	 Sending the request to the server
+DEBUG 2017-08-04 16:37:54,337: 	 Submitting {'maxjobruntime': 1250, 'extrajdl': [], 'ignorelocality': 0, 'savelogsflag': 1, 'useparent': 0, 'asyncdest': 'T2_CH_CERN', 'algoargs': 5000, 'cachefilename': '4c1f1967ded8a27e2abc2bf8f3fceec37ed121044716c75e24d0eeff0ec64bd5.tar.gz', 'numcores': 4, 'addoutputfiles': [], 'generator': 'pythia', 'maxmemory': 3000, 'publishdbsurl': 'https://cmsweb.cern.ch/dbs/prod/phys03/DBSWriter', 'priority': 10, 'jobsw': 'CMSSW_9_2_6', 'edmoutfiles': ['hlt.root'], 'userfiles': [], 'primarydataset': '', 'inputdata': '/ParkingHLTPhysics6/Run2017C-v1/RAW', 'lfn': '/store/group/dpg_trigger/comm_trigger/TriggerStudiesGroup/STEAM/xulyu//HLTPhysics_Run299420_v2p1V4_PS1p4e34_20170802_V2/', 'dryrun': 0, 'workflow': 'crab_HLTPhysics6', 'cacheurl': u'https://cmsweb.cern.ch/crabcache', 'runs': [u'299420'], 'lumis': ['11,50'], 'nonprodsw': 0, 'tfileoutfiles': [], 'oneEventMode': 0, 'debugfilename': '314a9efced5d1b197c39d9ebcce54d1081f48848c8b45f9de00beb6e574cd7f0.tar.gz', 'saveoutput': 1, 'publication': 0, 'jobarch': 'slc6_amd64_gcc530', 'totalunits': -1, 'splitalgo': 'EventAwareLumiBased', 'ignoreglobalblacklist': 0, 'nonvaliddata': 0, 'dbsurl': 'https://cmsweb.cern.ch/dbs/prod/global/DBSReader', 'publishgroupname': 0, 'jobtype': 'Analysis', 'publishname2': 'HLTPhysics_Run299420_v2p1V4_PS1p4e34_20170802_V2_HLTPhysics6'} 
+DEBUG 2017-08-04 16:37:54,338: 	 Encoded submit request: maxjobruntime=1250&ignorelocality=0&savelogsflag=1&useparent=0&asyncdest=T2_CH_CERN&algoargs=5000&cachefilename=4c1f1967ded8a27e2abc2bf8f3fceec37ed121044716c75e24d0eeff0ec64bd5.tar.gz&numcores=4&generator=pythia&maxmemory=3000&publishdbsurl=https%3A%2F%2Fcmsweb.cern.ch%2Fdbs%2Fprod%2Fphys03%2FDBSWriter&priority=10&jobsw=CMSSW_9_2_6&primarydataset=&inputdata=%2FParkingHLTPhysics6%2FRun2017C-v1%2FRAW&lfn=%2Fstore%2Fgroup%2Fdpg_trigger%2Fcomm_trigger%2FTriggerStudiesGroup%2FSTEAM%2Fxulyu%2F%2FHLTPhysics_Run299420_v2p1V4_PS1p4e34_20170802_V2%2F&dryrun=0&workflow=crab_HLTPhysics6&cacheurl=https%3A%2F%2Fcmsweb.cern.ch%2Fcrabcache&nonprodsw=0&oneEventMode=0&debugfilename=314a9efced5d1b197c39d9ebcce54d1081f48848c8b45f9de00beb6e574cd7f0.tar.gz&saveoutput=1&publication=0&jobarch=slc6_amd64_gcc530&totalunits=-1&splitalgo=EventAwareLumiBased&ignoreglobalblacklist=0&nonvaliddata=0&dbsurl=https%3A%2F%2Fcmsweb.cern.ch%2Fdbs%2Fprod%2Fglobal%2FDBSReader&publishgroupname=0&jobtype=Analysis&publishname2=HLTPhysics_Run299420_v2p1V4_PS1p4e34_20170802_V2_HLTPhysics6&edmoutfiles=hlt.root&runs=299420&lumis=11%2C50
+DEBUG 2017-08-04 16:38:01,768: 	 Result: {u'result': [{u'RequestName': u'170804_143759:lewang_crab_HLTPhysics6'}]}
+INFO 2017-08-04 16:38:01,771: 	 Success: Your task has been delivered to the CRAB3 server.
+INFO 2017-08-04 16:38:01,772: 	 Task name: 170804_143759:lewang_crab_HLTPhysics6
+INFO 2017-08-04 16:38:01,772: 	 Please use 'crab status' to check how the submission process proceeds.
+DEBUG 2017-08-04 16:38:01,772: 	 About to return

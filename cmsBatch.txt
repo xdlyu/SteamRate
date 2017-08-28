@@ -1,0 +1,1 @@
+./cmsBatch.py 1 hlt_Minotaur_v2p1V4_PS1p4e34.py -o HLTPhysics_Run299420_v2p1V4_PS1p4e34_20170802 -q 8nh -r /eos/cms/store/group/dpg_trigger/comm_trigger/TriggerStudiesGroup/STEAM/xulyu/HLTPhysics_Run299420_v2p1V4_PS1p4e34_20170802/hlt.root

@@ -1,0 +1,41 @@
+#! /bin/sh
+
+$LSB_TRAPSIGS
+$LSB_RCP1
+$LSB_RCP2
+$LSB_RCP3
+# LSBATCH: User input
+( cat <<_USER_\SCRIPT_
+#!/bin/bash
+#BSUB -q 8nm
+echo 'environment:'
+echo
+env
+ulimit -v 5000000
+echo 'copying job dir to worker'
+cd $LS_SUBCWD
+eval `scramv1 ru -sh`
+#cmsenv
+cd -
+cp -rf $LS_SUBCWD .
+ls
+cd `find . -type d | grep /`
+echo 'running'
+cmsRun run_cfg.py
+echo
+echo 'sending the job directory back'
+cp hlt.root /eos/cms/store/group/dpg_trigger/comm_trigger/TriggerStudiesGroup/STEAM/xulyu/HLTPhysics_Run299420_v2p1V4_PS1p4e34_20170802/hlt_28.root
+
+_USER_SCRIPT_
+) > $LSB_CHKFILENAME.shell
+chmod u+x $LSB_CHKFILENAME.shell
+/usr/local/lsf/etc/job_starter '$LSB_JOBFILENAME.shell'
+saveExit=$?
+/bin/rm -f $LSB_JOBFILENAME.shell
+(exit $saveExit)
+
+ExitStat=$?
+wait
+# LSBATCH: End user input
+true
+exit `expr $? "|" $ExitStat`

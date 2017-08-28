@@ -1,0 +1,358 @@
+DEBUG 2017-08-04 16:33:38,474: 	 Executing command: 'submit'
+DEBUG 2017-08-04 16:33:38,482: 	 Found CRAB cache file /afs/cern.ch/user/l/lewang/.crab3
+DEBUG 2017-08-04 16:33:38,500: 	 Checking credentials
+DEBUG 2017-08-04 16:33:38,501: 	 Found proxy file /tmp/x509up_u74916
+DEBUG 2017-08-04 16:33:38,501: 	 Getting proxy life time left
+DEBUG 2017-08-04 16:33:39,339: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u74916 -timeleft
+ output : 82283
+
+ error: 
+ retcode : 0
+DEBUG 2017-08-04 16:33:40,070: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u74916 -actimeleft
+ output : 82282
+
+ error: 
+ retcode : 0
+DEBUG 2017-08-04 16:33:40,071: 	 Proxy valid for 22:51:23 hours
+DEBUG 2017-08-04 16:33:40,072: 	 Will use CRAB Analysis plugin (i.e. will run an analysis job type).
+DEBUG 2017-08-04 16:33:40,197: 	 Executing : 
+ command : openssl x509 -in ~/.globus/usercert.pem -subject -noout
+ output : subject= /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=lewang/CN=763351/CN=Lei Wang
+
+ error: 
+ retcode : 0
+DEBUG 2017-08-04 16:33:40,198: 	 Checking credentials
+DEBUG 2017-08-04 16:33:40,198: 	 Found proxy file /tmp/x509up_u74916
+DEBUG 2017-08-04 16:33:40,198: 	 Getting proxy life time left
+DEBUG 2017-08-04 16:33:40,720: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u74916 -timeleft
+ output : 82282
+
+ error: 
+ retcode : 0
+DEBUG 2017-08-04 16:33:41,249: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u74916 -actimeleft
+ output : 82281
+
+ error: 
+ retcode : 0
+DEBUG 2017-08-04 16:33:41,249: 	 Proxy valid for 22:51:22 hours
+DEBUG 2017-08-04 16:33:41,814: 	 Executing : 
+ command : env X509_USER_PROXY=/tmp/x509up_u74916 voms-proxy-info -fqan
+ output : /cms/Role=NULL/Capability=NULL
+
+ error: 
+ retcode : 0
+DEBUG 2017-08-04 16:33:42,231: 	 Registering user credentials for server /DC=ch/DC=cern/OU=computers/CN=vocms(045|052|021|031|0118|0118a|0119|0108|0105|0109).cern.ch
+DEBUG 2017-08-04 16:33:42,276: 	 Executing : 
+ command : openssl x509 -in ~/.globus/usercert.pem -subject -noout
+ output : subject= /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=lewang/CN=763351/CN=Lei Wang
+
+ error: 
+ retcode : 0
+DEBUG 2017-08-04 16:33:42,277: 	 Getting myproxy life time left for myproxy.cern.ch
+DEBUG 2017-08-04 16:33:42,277: 	 Calculating hash of /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=lewang/CN=763351/CN=Lei Wang_cmsweb.cern.ch for credential name
+DEBUG 2017-08-04 16:33:42,533: 	 Executing : 
+ command : myproxy-info -l 1b9ed1fd5af45f6b0603ad12c45a57a42d266ac3 -s myproxy.cern.ch
+ output : username: 1b9ed1fd5af45f6b0603ad12c45a57a42d266ac3
+owner: /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=lewang/CN=763351/CN=Lei Wang
+  renewal policy: /DC=ch/DC=cern/OU=computers/CN=vocms(045|052|021|031|0118|0118a|0119|0108|0105|0109).cern.ch
+  trusted retrieval policy: /DC=ch/DC=cern/OU=computers/CN=vocms(045|052|021|031|0118|0118a|0119|0108|0105|0109).cern.ch
+  timeleft: 706:44:39  (29.4 days)
+
+ error: 
+ retcode : 0
+DEBUG 2017-08-04 16:33:42,534: 	 Myproxy is valid: 2544279
+DEBUG 2017-08-04 16:33:42,534: 	 Command use: submit
+DEBUG 2017-08-04 16:33:42,534: 	 Options use: ['--config', <WMCore.Configuration.Configuration object at 0x7f8589d74690>]
+DEBUG 2017-08-04 16:33:42,948: 	 CRABClient version: 3.3.1707.patch1
+DEBUG 2017-08-04 16:33:42,948: 	 Instance is prod
+DEBUG 2017-08-04 16:33:42,948: 	 Server base url is cmsweb.cern.ch
+DEBUG 2017-08-04 16:33:42,948: 	 Command url /crabserver/prod/workflow
+DEBUG 2017-08-04 16:33:42,948: 	 Started submission
+DEBUG 2017-08-04 16:33:42,948: 	 Working on /afs/cern.ch/user/l/lewang/Xudong/hltphysicsrate/CMSSW_9_2_6/src/SteamRates/crab_HLTPhysics_Run299420_v2p1V4_PS1p4e34_20170802_V2/crab_HLTPhysics1
+DEBUG 2017-08-04 16:33:43,677: 	 Loading required information from the environment
+DEBUG 2017-08-04 16:33:43,677: 	 Found CMSSW_9_2_6 for slc6_amd64_gcc530 with base /afs/cern.ch/user/l/lewang/Xudong/hltphysicsrate/CMSSW_9_2_6
+DEBUG 2017-08-04 16:33:43,677: 	 Loading required information from the environment
+DEBUG 2017-08-04 16:33:43,677: 	 Found CMSSW_9_2_6 for slc6_amd64_gcc530 with base /afs/cern.ch/user/l/lewang/Xudong/hltphysicsrate/CMSSW_9_2_6
+DEBUG 2017-08-04 16:33:43,695: 	 UNIQUE NAME: tarUUID 723dfa8a-338f-40db-a448-178318516939 
+DEBUG 2017-08-04 16:33:43,696: 	 self.config: from WMCore.Configuration import Configuration
+config = Configuration()
+config.section_('General')
+config.General.transferLogs = True
+config.General.workArea = 'crab_HLTPhysics_Run299420_v2p1V4_PS1p4e34_20170802_V2'
+config.General.requestName = 'HLTPhysics1'
+config.section_('JobType')
+config.JobType.psetName = 'hlt_Minotaur_v2p1V4_PS1p4e34.py'
+config.JobType.pluginName = 'Analysis'
+config.JobType.outputFiles = ['hlt.root']
+config.JobType.numCores = 4
+config.JobType.maxMemoryMB = 3000
+config.section_('Data')
+config.Data.inputDataset = '/ParkingHLTPhysics1/Run2017C-v1/RAW'
+config.Data.outputDatasetTag = 'HLTPhysics_Run299420_v2p1V4_PS1p4e34_20170802_V2_HLTPhysics1'
+config.Data.publication = False
+config.Data.unitsPerJob = 5000
+config.Data.inputDBS = 'global'
+config.Data.splitting = 'EventAwareLumiBased'
+config.Data.outLFNDirBase = '/store/group/dpg_trigger/comm_trigger/TriggerStudiesGroup/STEAM/xulyu//HLTPhysics_Run299420_v2p1V4_PS1p4e34_20170802_V2/'
+config.Data.lumiMask = 'json_299420_LS11to50.txt'
+config.Data.totalUnits = -1
+config.section_('Site')
+config.Site.storageSite = 'T2_CH_CERN'
+config.section_('User')
+config.section_('Debug')
+
+DEBUG 2017-08-04 16:33:43,696: 	 self.config.JobType.psetName: hlt_Minotaur_v2p1V4_PS1p4e34.py
+INFO 2017-08-04 16:33:43,699: 	 Importing CMSSW configuration hlt_Minotaur_v2p1V4_PS1p4e34.py
+INFO 2017-08-04 16:33:47,101: 	 Finished importing CMSSW configuration hlt_Minotaur_v2p1V4_PS1p4e34.py
+DEBUG 2017-08-04 16:33:47,101: 	 Writing CMSSW configuration to /afs/cern.ch/user/l/lewang/Xudong/hltphysicsrate/CMSSW_9_2_6/src/SteamRates/crab_HLTPhysics_Run299420_v2p1V4_PS1p4e34_20170802_V2/crab_HLTPhysics1/inputs/PSet.py
+DEBUG 2017-08-04 16:33:52,048: 	 The following EDM output files will be collected: ['hlt.root']
+DEBUG 2017-08-04 16:33:52,048: 	 The following TFile output files will be collected: []
+DEBUG 2017-08-04 16:33:52,048: 	 The following user output files will be collected: []
+DEBUG 2017-08-04 16:33:52,048: 	 Loading required information from the environment
+DEBUG 2017-08-04 16:33:52,048: 	 Found CMSSW_9_2_6 for slc6_amd64_gcc530 with base /afs/cern.ch/user/l/lewang/Xudong/hltphysicsrate/CMSSW_9_2_6
+DEBUG 2017-08-04 16:33:52,049: 	 Making tarball in /afs/cern.ch/user/l/lewang/Xudong/hltphysicsrate/CMSSW_9_2_6/src/SteamRates/crab_HLTPhysics_Run299420_v2p1V4_PS1p4e34_20170802_V2/crab_HLTPhysics1/inputs/723dfa8a-338f-40db-a448-178318516939default.tgz
+DEBUG 2017-08-04 16:33:52,139: 	 Checking directory /afs/cern.ch/user/l/lewang/Xudong/hltphysicsrate/CMSSW_9_2_6/lib
+DEBUG 2017-08-04 16:33:52,139: 	 Adding directory /afs/cern.ch/user/l/lewang/Xudong/hltphysicsrate/CMSSW_9_2_6/lib to tarball
+DEBUG 2017-08-04 16:34:01,452: 	 Checking directory /afs/cern.ch/user/l/lewang/Xudong/hltphysicsrate/CMSSW_9_2_6/biglib
+DEBUG 2017-08-04 16:34:01,452: 	 Adding directory /afs/cern.ch/user/l/lewang/Xudong/hltphysicsrate/CMSSW_9_2_6/biglib to tarball
+DEBUG 2017-08-04 16:34:04,574: 	 Checking directory /afs/cern.ch/user/l/lewang/Xudong/hltphysicsrate/CMSSW_9_2_6/module
+DEBUG 2017-08-04 16:34:11,628: 	 Adding data directory /afs/cern.ch/user/l/lewang/Xudong/hltphysicsrate/CMSSW_9_2_6/src/CondCore/ESSources/interface to tarball
+DEBUG 2017-08-04 16:34:12,010: 	 Adding data directory /afs/cern.ch/user/l/lewang/Xudong/hltphysicsrate/CMSSW_9_2_6/src/CondFormats/DataRecord/interface to tarball
+DEBUG 2017-08-04 16:34:13,082: 	 Adding data directory /afs/cern.ch/user/l/lewang/Xudong/hltphysicsrate/CMSSW_9_2_6/src/CondTools/L1TriggerExt/interface to tarball
+DEBUG 2017-08-04 16:34:13,610: 	 Adding data directory /afs/cern.ch/user/l/lewang/Xudong/hltphysicsrate/CMSSW_9_2_6/src/Configuration/PyReleaseValidation/data to tarball
+DEBUG 2017-08-04 16:34:13,682: 	 Adding data directory /afs/cern.ch/user/l/lewang/Xudong/hltphysicsrate/CMSSW_9_2_6/src/Configuration/Skimming/interface to tarball
+DEBUG 2017-08-04 16:34:13,956: 	 Adding data directory /afs/cern.ch/user/l/lewang/Xudong/hltphysicsrate/CMSSW_9_2_6/src/DQM/L1TMonitor/interface to tarball
+DEBUG 2017-08-04 16:34:14,269: 	 Adding data directory /afs/cern.ch/user/l/lewang/Xudong/hltphysicsrate/CMSSW_9_2_6/src/DataFormats/L1TMuon/interface to tarball
+DEBUG 2017-08-04 16:34:14,380: 	 Adding data directory /afs/cern.ch/user/l/lewang/Xudong/hltphysicsrate/CMSSW_9_2_6/src/EventFilter/L1TRawToDigi/interface to tarball
+DEBUG 2017-08-04 16:34:14,808: 	 Adding data directory /afs/cern.ch/user/l/lewang/Xudong/hltphysicsrate/CMSSW_9_2_6/src/L1Trigger/L1TCalorimeter/interface to tarball
+DEBUG 2017-08-04 16:34:15,397: 	 Adding data directory /afs/cern.ch/user/l/lewang/Xudong/hltphysicsrate/CMSSW_9_2_6/src/L1Trigger/L1TCalorimeter/data to tarball
+DEBUG 2017-08-04 16:34:15,437: 	 Adding data directory /afs/cern.ch/user/l/lewang/Xudong/hltphysicsrate/CMSSW_9_2_6/src/L1Trigger/L1TMuon/interface to tarball
+DEBUG 2017-08-04 16:34:15,589: 	 Adding data directory /afs/cern.ch/user/l/lewang/Xudong/hltphysicsrate/CMSSW_9_2_6/src/L1Trigger/L1TMuon/data to tarball
+DEBUG 2017-08-04 16:34:20,436: 	 Adding data directory /afs/cern.ch/user/l/lewang/Xudong/hltphysicsrate/CMSSW_9_2_6/src/L1Trigger/L1TMuonBarrel/interface to tarball
+DEBUG 2017-08-04 16:34:20,649: 	 Adding data directory /afs/cern.ch/user/l/lewang/Xudong/hltphysicsrate/CMSSW_9_2_6/src/L1Trigger/L1TMuonEndCap/interface to tarball
+DEBUG 2017-08-04 16:34:20,902: 	 Adding data directory /afs/cern.ch/user/l/lewang/Xudong/hltphysicsrate/CMSSW_9_2_6/src/L1Trigger/L1TCommon/interface to tarball
+DEBUG 2017-08-04 16:34:20,997: 	 Adding data directory /afs/cern.ch/user/l/lewang/Xudong/hltphysicsrate/CMSSW_9_2_6/src/L1Trigger/L1TGlobal/interface to tarball
+DEBUG 2017-08-04 16:34:21,122: 	 Adding data directory /afs/cern.ch/user/l/lewang/Xudong/hltphysicsrate/CMSSW_9_2_6/src/L1Trigger/L1TGlobal/data to tarball
+DEBUG 2017-08-04 16:34:21,769: 	 Adding data directory /afs/cern.ch/user/l/lewang/Xudong/hltphysicsrate/CMSSW_9_2_6/src/L1Trigger/L1TMuonOverlap/interface to tarball
+DEBUG 2017-08-04 16:34:21,943: 	 Adding data directory /afs/cern.ch/user/l/lewang/Xudong/hltphysicsrate/CMSSW_9_2_6/src/L1Trigger/L1TNtuples/interface to tarball
+DEBUG 2017-08-04 16:34:22,571: 	 Adding data directory /afs/cern.ch/user/l/lewang/Xudong/hltphysicsrate/CMSSW_9_2_6/src/Utilities/ReleaseScripts/data to tarball
+DEBUG 2017-08-04 16:34:22,878: 	 Adding data directory /afs/cern.ch/user/l/lewang/Xudong/hltphysicsrate/CMSSW_9_2_6/src/Alignment/MillePedeAlignmentAlgorithm/interface to tarball
+DEBUG 2017-08-04 16:34:23,194: 	 Adding data directory /afs/cern.ch/user/l/lewang/Xudong/hltphysicsrate/CMSSW_9_2_6/src/DQMOffline/L1Trigger/interface to tarball
+DEBUG 2017-08-04 16:34:23,361: 	 Adding data directory /afs/cern.ch/user/l/lewang/Xudong/hltphysicsrate/CMSSW_9_2_6/src/Fireworks/FWInterface/interface to tarball
+DEBUG 2017-08-04 16:34:23,414: 	 Adding data directory /afs/cern.ch/user/l/lewang/Xudong/hltphysicsrate/CMSSW_9_2_6/src/Fireworks/Geometry/data to tarball
+DEBUG 2017-08-04 16:34:23,446: 	 Adding data directory /afs/cern.ch/user/l/lewang/Xudong/hltphysicsrate/CMSSW_9_2_6/src/Fireworks/Geometry/interface to tarball
+DEBUG 2017-08-04 16:34:23,607: 	 Adding data directory /afs/cern.ch/user/l/lewang/Xudong/hltphysicsrate/CMSSW_9_2_6/src/Geometry/HGCalGeometry/interface to tarball
+DEBUG 2017-08-04 16:34:23,681: 	 Adding data directory /afs/cern.ch/user/l/lewang/Xudong/hltphysicsrate/CMSSW_9_2_6/src/Geometry/HcalCommonData/data to tarball
+DEBUG 2017-08-04 16:34:24,173: 	 Adding data directory /afs/cern.ch/user/l/lewang/Xudong/hltphysicsrate/CMSSW_9_2_6/src/Geometry/HcalCommonData/interface to tarball
+DEBUG 2017-08-04 16:34:24,265: 	 Adding data directory /afs/cern.ch/user/l/lewang/Xudong/hltphysicsrate/CMSSW_9_2_6/src/PhysicsTools/PatAlgos/interface to tarball
+DEBUG 2017-08-04 16:34:24,884: 	 Adding data directory /afs/cern.ch/user/l/lewang/Xudong/hltphysicsrate/CMSSW_9_2_6/src/RecoEgamma/EgammaHLTProducers/interface to tarball
+DEBUG 2017-08-04 16:34:25,098: 	 Adding data directory /afs/cern.ch/user/l/lewang/Xudong/hltphysicsrate/CMSSW_9_2_6/src/SimG4CMS/Calo/data to tarball
+DEBUG 2017-08-04 16:34:25,185: 	 Adding data directory /afs/cern.ch/user/l/lewang/Xudong/hltphysicsrate/CMSSW_9_2_6/src/SimG4CMS/Calo/interface to tarball
+DEBUG 2017-08-04 16:34:25,470: 	 Adding data directory /afs/cern.ch/user/l/lewang/Xudong/hltphysicsrate/CMSSW_9_2_6/src/SimG4CMS/Forward/data to tarball
+DEBUG 2017-08-04 16:34:25,515: 	 Adding data directory /afs/cern.ch/user/l/lewang/Xudong/hltphysicsrate/CMSSW_9_2_6/src/SimG4CMS/Forward/interface to tarball
+DEBUG 2017-08-04 16:34:25,798: 	 Adding data directory /afs/cern.ch/user/l/lewang/Xudong/hltphysicsrate/CMSSW_9_2_6/src/SimG4CMS/Forward/test/data to tarball
+DEBUG 2017-08-04 16:34:25,884: 	 Adding data directory /afs/cern.ch/user/l/lewang/Xudong/hltphysicsrate/CMSSW_9_2_6/src/Validation/Performance/data to tarball
+DEBUG 2017-08-04 16:34:25,912: 	 Adding data directory /afs/cern.ch/user/l/lewang/Xudong/hltphysicsrate/CMSSW_9_2_6/src/Validation/Performance/interface to tarball
+DEBUG 2017-08-04 16:34:27,879: 	 Uploading archive /afs/cern.ch/user/l/lewang/Xudong/hltphysicsrate/CMSSW_9_2_6/src/SteamRates/crab_HLTPhysics_Run299420_v2p1V4_PS1p4e34_20170802_V2/crab_HLTPhysics1/inputs/723dfa8a-338f-40db-a448-178318516939default.tgz (28 MB) to the CRAB cache. Using URI https://cmsweb.cern.ch/crabcache
+DEBUG 2017-08-04 16:34:37,024: 	 Loading required information from the environment
+DEBUG 2017-08-04 16:34:37,024: 	 Found CMSSW_9_2_6 for slc6_amd64_gcc530 with base /afs/cern.ch/user/l/lewang/Xudong/hltphysicsrate/CMSSW_9_2_6
+DEBUG 2017-08-04 16:34:37,024: 	 Making tarball in /afs/cern.ch/user/l/lewang/Xudong/hltphysicsrate/CMSSW_9_2_6/src/SteamRates/crab_HLTPhysics_Run299420_v2p1V4_PS1p4e34_20170802_V2/crab_HLTPhysics1/inputs/debugFiles.tgz
+DEBUG 2017-08-04 16:34:37,210: 	 Uploading archive /afs/cern.ch/user/l/lewang/Xudong/hltphysicsrate/CMSSW_9_2_6/src/SteamRates/crab_HLTPhysics_Run299420_v2p1V4_PS1p4e34_20170802_V2/crab_HLTPhysics1/inputs/debugFiles.tgz (282 KB) to the CRAB cache. Using URI https://cmsweb.cern.ch/crabcache
+DEBUG 2017-08-04 16:34:37,735: 	 Result uploading input files: 4c1f1967ded8a27e2abc2bf8f3fceec37ed121044716c75e24d0eeff0ec64bd5.tar.gz 
+DEBUG 2017-08-04 16:34:37,736: 	 Attaching lumi mask json_299420_LS11to50.txt to the request
+DEBUG 2017-08-04 16:34:37,736: 	 Reading lumi-mask from json_299420_LS11to50.txt
+INFO 2017-08-04 16:34:37,774: 	 Sending the request to the server
+DEBUG 2017-08-04 16:34:37,774: 	 Submitting {'maxjobruntime': 1250, 'extrajdl': [], 'ignorelocality': 0, 'savelogsflag': 1, 'useparent': 0, 'asyncdest': 'T2_CH_CERN', 'algoargs': 5000, 'cachefilename': '4c1f1967ded8a27e2abc2bf8f3fceec37ed121044716c75e24d0eeff0ec64bd5.tar.gz', 'numcores': 4, 'addoutputfiles': [], 'generator': 'pythia', 'maxmemory': 3000, 'publishdbsurl': 'https://cmsweb.cern.ch/dbs/prod/phys03/DBSWriter', 'priority': 10, 'jobsw': 'CMSSW_9_2_6', 'edmoutfiles': ['hlt.root'], 'userfiles': [], 'primarydataset': '', 'inputdata': '/ParkingHLTPhysics1/Run2017C-v1/RAW', 'lfn': '/store/group/dpg_trigger/comm_trigger/TriggerStudiesGroup/STEAM/xulyu//HLTPhysics_Run299420_v2p1V4_PS1p4e34_20170802_V2/', 'dryrun': 0, 'workflow': 'crab_HLTPhysics1', 'cacheurl': u'https://cmsweb.cern.ch/crabcache', 'runs': [u'299420'], 'lumis': ['11,50'], 'nonprodsw': 0, 'tfileoutfiles': [], 'oneEventMode': 0, 'debugfilename': '086c843d38cd59112fbdaf1b5eff7c830270b87d59699eb83bb77602af5b0339.tar.gz', 'saveoutput': 1, 'publication': 0, 'jobarch': 'slc6_amd64_gcc530', 'totalunits': -1, 'splitalgo': 'EventAwareLumiBased', 'ignoreglobalblacklist': 0, 'nonvaliddata': 0, 'dbsurl': 'https://cmsweb.cern.ch/dbs/prod/global/DBSReader', 'publishgroupname': 0, 'jobtype': 'Analysis', 'publishname2': 'HLTPhysics_Run299420_v2p1V4_PS1p4e34_20170802_V2_HLTPhysics1'} 
+DEBUG 2017-08-04 16:34:37,775: 	 Encoded submit request: maxjobruntime=1250&ignorelocality=0&savelogsflag=1&useparent=0&asyncdest=T2_CH_CERN&algoargs=5000&cachefilename=4c1f1967ded8a27e2abc2bf8f3fceec37ed121044716c75e24d0eeff0ec64bd5.tar.gz&numcores=4&generator=pythia&maxmemory=3000&publishdbsurl=https%3A%2F%2Fcmsweb.cern.ch%2Fdbs%2Fprod%2Fphys03%2FDBSWriter&priority=10&jobsw=CMSSW_9_2_6&primarydataset=&inputdata=%2FParkingHLTPhysics1%2FRun2017C-v1%2FRAW&lfn=%2Fstore%2Fgroup%2Fdpg_trigger%2Fcomm_trigger%2FTriggerStudiesGroup%2FSTEAM%2Fxulyu%2F%2FHLTPhysics_Run299420_v2p1V4_PS1p4e34_20170802_V2%2F&dryrun=0&workflow=crab_HLTPhysics1&cacheurl=https%3A%2F%2Fcmsweb.cern.ch%2Fcrabcache&nonprodsw=0&oneEventMode=0&debugfilename=086c843d38cd59112fbdaf1b5eff7c830270b87d59699eb83bb77602af5b0339.tar.gz&saveoutput=1&publication=0&jobarch=slc6_amd64_gcc530&totalunits=-1&splitalgo=EventAwareLumiBased&ignoreglobalblacklist=0&nonvaliddata=0&dbsurl=https%3A%2F%2Fcmsweb.cern.ch%2Fdbs%2Fprod%2Fglobal%2FDBSReader&publishgroupname=0&jobtype=Analysis&publishname2=HLTPhysics_Run299420_v2p1V4_PS1p4e34_20170802_V2_HLTPhysics1&edmoutfiles=hlt.root&runs=299420&lumis=11%2C50
+DEBUG 2017-08-04 16:34:38,457: 	 Result: {u'result': [{u'RequestName': u'170804_143438:lewang_crab_HLTPhysics1'}]}
+INFO 2017-08-04 16:34:38,462: 	 Success: Your task has been delivered to the CRAB3 server.
+INFO 2017-08-04 16:34:38,462: 	 Task name: 170804_143438:lewang_crab_HLTPhysics1
+INFO 2017-08-04 16:34:38,463: 	 Please use 'crab status' to check how the submission process proceeds.
+DEBUG 2017-08-04 16:34:38,463: 	 About to return
+DEBUG 2017-08-04 16:51:37,060: 	 Executing command: 'status'
+DEBUG 2017-08-04 16:51:37,060: 	 Found CRAB cache file /afs/cern.ch/user/l/lewang/.crab3
+DEBUG 2017-08-04 16:51:37,074: 	 Checking credentials
+DEBUG 2017-08-04 16:51:37,075: 	 Found proxy file /tmp/x509up_u74916
+DEBUG 2017-08-04 16:51:37,075: 	 Getting proxy life time left
+DEBUG 2017-08-04 16:51:38,199: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u74916 -timeleft
+ output : 81204
+
+ error: 
+ retcode : 0
+DEBUG 2017-08-04 16:51:39,442: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u74916 -actimeleft
+ output : 81203
+
+ error: 
+ retcode : 0
+DEBUG 2017-08-04 16:51:39,442: 	 Proxy valid for 22:33:24 hours
+DEBUG 2017-08-04 16:51:39,560: 	 Executing : 
+ command : openssl x509 -in ~/.globus/usercert.pem -subject -noout
+ output : subject= /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=lewang/CN=763351/CN=Lei Wang
+
+ error: 
+ retcode : 0
+DEBUG 2017-08-04 16:51:39,561: 	 Checking credentials
+DEBUG 2017-08-04 16:51:39,562: 	 Found proxy file /tmp/x509up_u74916
+DEBUG 2017-08-04 16:51:39,562: 	 Getting proxy life time left
+DEBUG 2017-08-04 16:51:40,588: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u74916 -timeleft
+ output : 81202
+
+ error: 
+ retcode : 0
+DEBUG 2017-08-04 16:51:41,397: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u74916 -actimeleft
+ output : 81201
+
+ error: 
+ retcode : 0
+DEBUG 2017-08-04 16:51:41,397: 	 Proxy valid for 22:33:22 hours
+DEBUG 2017-08-04 16:51:42,060: 	 Registering user credentials for server /DC=ch/DC=cern/OU=computers/CN=vocms(045|052|021|031|0118|0118a|0119|0108|0105|0109).cern.ch
+DEBUG 2017-08-04 16:51:42,183: 	 Executing : 
+ command : openssl x509 -in ~/.globus/usercert.pem -subject -noout
+ output : subject= /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=lewang/CN=763351/CN=Lei Wang
+
+ error: 
+ retcode : 0
+DEBUG 2017-08-04 16:51:42,183: 	 Getting myproxy life time left for myproxy.cern.ch
+DEBUG 2017-08-04 16:51:42,183: 	 Calculating hash of /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=lewang/CN=763351/CN=Lei Wang_cmsweb.cern.ch for credential name
+DEBUG 2017-08-04 16:51:42,507: 	 Executing : 
+ command : myproxy-info -l 1b9ed1fd5af45f6b0603ad12c45a57a42d266ac3 -s myproxy.cern.ch
+ output : username: 1b9ed1fd5af45f6b0603ad12c45a57a42d266ac3
+owner: /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=lewang/CN=763351/CN=Lei Wang
+  renewal policy: /DC=ch/DC=cern/OU=computers/CN=vocms(045|052|021|031|0118|0118a|0119|0108|0105|0109).cern.ch
+  trusted retrieval policy: /DC=ch/DC=cern/OU=computers/CN=vocms(045|052|021|031|0118|0118a|0119|0108|0105|0109).cern.ch
+  timeleft: 706:26:39  (29.4 days)
+
+ error: 
+ retcode : 0
+DEBUG 2017-08-04 16:51:42,508: 	 Myproxy is valid: 2543199
+DEBUG 2017-08-04 16:51:42,508: 	 Command use: status
+DEBUG 2017-08-04 16:51:42,509: 	 Options use: ['-d', 'crab_HLTPhysics_Run299420_v2p1V4_PS1p4e34_20170802_V2/crab_HLTPhysics1/']
+DEBUG 2017-08-04 16:51:43,047: 	 CRABClient version: 3.3.1707.patch1
+DEBUG 2017-08-04 16:51:43,047: 	 Instance is prod
+DEBUG 2017-08-04 16:51:43,048: 	 Server base url is cmsweb.cern.ch
+DEBUG 2017-08-04 16:51:43,048: 	 Command url /crabserver/prod/workflow
+DEBUG 2017-08-04 16:51:43,484: 	 Got information from server oracle database: {u'result': [u'170804_143438:lewang_crab_HLTPhysics1', u'None', u'SUBMITTED', u'2017-08-04 14:34:38.427171', u'None', u'2017-08-04 14:36:09.353386', u'None', u'CMSSW_9_2_6', u'slc6_amd64_gcc530', u'/ParkingHLTPhysics1/Run2017C-v1/RAW', u'[]', u'[]', u'EventAwareLumiBased', u"{'splitOnRun': False, 'events_per_job': 5000, 'halt_job_on_file_boundaries': False, 'runs': ['299420'], 'lumis': ['11,50']}", u'-1', u'4c1f1967ded8a27e2abc2bf8f3fceec37ed121044716c75e24d0eeff0ec64bd5.tar.gz', u'https://cmsweb.cern.ch/crabcache', u'lewang', u'/DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=lewang/CN=763351/CN=Lei Wang', u'cms', u'None', u'None', u'HLTPhysics_Run299420_v2p1V4_PS1p4e34_20170802_V2_HLTPhysics1-00000000000000000000000000000000', u'T2_CH_CERN', u'https://cmsweb.cern.ch/dbs/prod/global/DBSReader', u'https://cmsweb.cern.ch/dbs/prod/phys03/DBSWriter', u'F', u'Analysis', u'{}', u'[]', u'T', u'vocms052', u'[]', u'1250', u'4', u'3000', u'10', u'None', u'http://vocms0197.cern.ch/mon/cms1522/170804_143438:lewang_crab_HLTPhysics1', u'None', u'None', u'[]', u'[]', u"['Task requests 3000 MB of memory, but only 2500 MB are guaranteed to be available. Jobs may not find a site where to run and stay idle forever.']", u'pythia', u'[]', u'[]', u"['hlt.root']", u'https://cmsweb.cern.ch/crabserver/prod', u'None', u'0', u'cmsgwms-collector-global.cern.ch:9620,cmssrv221.fnal.gov:9620', u'crab3@vocms0197.cern.ch', u'F', u'[]', u'T', u'/store/group/dpg_trigger/comm_trigger/TriggerStudiesGroup/STEAM/xulyu//HLTPhysics_Run299420_v2p1V4_PS1p4e34_20170802_V2/', u'F', u'None', u'F', u'F', u'F', u'None', u'ParkingHLTPhysics1', u'filetransfers', u'SUBMIT', u'8526902', u'086c843d38cd59112fbdaf1b5eff7c830270b87d59699eb83bb77602af5b0339.tar.gz', u'188.184.93.246', u'F', u'None'], u'desc': {u'columns': [u'tm_taskname', u'panda_jobset_id', u'tm_task_status', u'tm_start_time', u'tm_start_injection', u'tm_end_injection', u'tm_task_failure', u'tm_job_sw', u'tm_job_arch', u'tm_input_dataset', u'tm_site_whitelist', u'tm_site_blacklist', u'tm_split_algo', u'tm_split_args', u'tm_totalunits', u'tm_user_sandbox', u'tm_cache_url', u'tm_username', u'tm_user_dn', u'tm_user_vo', u'tm_user_role', u'tm_user_group', u'tm_publish_name', u'tm_asyncdest', u'tm_dbs_url', u'tm_publish_dbs_url', u'tm_publication', u'tm_job_type', u'tm_arguments', u'panda_resubmitted_jobs', u'tm_save_logs', u'tw_name', u'tm_user_infiles', u'tm_maxjobruntime', u'tm_numcores', u'tm_maxmemory', u'tm_priority', u'tm_output_dataset', u'tm_user_webdir', u'tm_activity', u'tm_scriptexe', u'tm_scriptargs', u'tm_extrajdl', u'tm_task_warnings', u'tm_generator', u'tm_outfiles', u'tm_tfile_outfiles', u'tm_edm_outfiles', u'tm_asourl', u'tm_events_per_lumi', u'tm_use_parent', u'tm_collector', u'tm_schedd', u'tm_dry_run', u'tm_user_files', u'tm_transfer_outputs', u'tm_output_lfn', u'tm_ignore_locality', u'tm_fail_limit', u'tm_one_event_mode', u'tm_publish_groupname', u'tm_nonvalid_input_dataset', u'tm_secondary_input_dataset', u'tm_primary_dataset', u'tm_asodb', u'tm_task_command', u'clusterid', u'tm_debug_files', u'tm_submitter_ip_addr', u'tm_ignore_global_blacklist', u'tm_last_publication']}}
+INFO 2017-08-04 16:51:43,485: 	 CRAB project directory:		/afs/cern.ch/user/l/lewang/Xudong/hltphysicsrate/CMSSW_9_2_6/src/SteamRates/crab_HLTPhysics_Run299420_v2p1V4_PS1p4e34_20170802_V2/crab_HLTPhysics1
+INFO 2017-08-04 16:51:43,485: 	 Task name:			170804_143438:lewang_crab_HLTPhysics1
+INFO 2017-08-04 16:51:43,485: 	 Grid scheduler:			crab3@vocms0197.cern.ch
+INFO 2017-08-04 16:51:43,485: 	 Status on the CRAB server:	SUBMITTED
+INFO 2017-08-04 16:51:43,486: 	 Task URL to use for HELP:	https://cmsweb.cern.ch/crabserver/ui/task/170804_143438%3Alewang_crab_HLTPhysics1
+INFO 2017-08-04 16:51:43,486: 	 Dashboard monitoring URL:	http://dashb-cms-job.cern.ch/dashboard/templates/task-analysis/#user=lewang&refresh=0&table=Jobs&p=1&records=25&activemenu=2&status=&site=&tid=170804_143438%3Alewang_crab_HLTPhysics1
+WARNING 2017-08-04 16:51:43,487: 	 Warning:			Task requests 3000 MB of memory, but only 2500 MB are guaranteed to be available. Jobs may not find a site where to run and stay idle forever.
+DEBUG 2017-08-04 16:51:43,488: 	 The CRAB server submitted your task to the Grid scheduler (cluster ID: 8526902)
+DEBUG 2017-08-04 16:51:43,488: 	 Webdir is located at http://vocms0197.cern.ch/mon/cms1522/170804_143438:lewang_crab_HLTPhysics1
+DEBUG 2017-08-04 16:51:44,162: 	 Proxied webdir is located at https://cmsweb.cern.ch/scheddmon/0197/cms1522/170804_143438:lewang_crab_HLTPhysics1
+DEBUG 2017-08-04 16:51:44,162: 	 Retrieving 'status_cache' file from https://cmsweb.cern.ch/scheddmon/0197/cms1522/170804_143438:lewang_crab_HLTPhysics1/status_cache
+DEBUG 2017-08-04 16:51:44,671: 	 Got information from status cache file: {'24': {'Retries': 0, 'WallDurations': [9.0, 309.0], 'StartTimes': [1501857700.0], 'SubmitTimes': [1501857411.0], 'JobIds': ['8526944.0'], 'EndTimes': [], 'Restarts': 0, 'RecordedSite': True, 'State': 'running', 'ResidentSetSize': [1884832], 'TotalUserCpuTimeHistory': [901.0], 'SiteHistory': ['Unknown', 'T1_US_FNAL'], 'TotalSysCpuTimeHistory': [29.0]}, '25': {'Retries': 0, 'WallDurations': [10.0, 311.0], 'StartTimes': [1501857715.0], 'SubmitTimes': [1501857410.0], 'JobIds': ['8526942.0'], 'EndTimes': [], 'Restarts': 0, 'RecordedSite': True, 'State': 'running', 'ResidentSetSize': [1943952], 'TotalUserCpuTimeHistory': [731.0], 'SiteHistory': ['Unknown', 'T1_US_FNAL'], 'TotalSysCpuTimeHistory': [27.0]}, '26': {'Retries': 0, 'WallDurations': [9.0, 309.0], 'StartTimes': [1501857716.0], 'SubmitTimes': [1501857411.0], 'JobIds': ['8526945.0'], 'EndTimes': [], 'Restarts': 0, 'RecordedSite': True, 'State': 'running', 'ResidentSetSize': [1801184], 'TotalUserCpuTimeHistory': [800.0], 'SiteHistory': ['Unknown', 'T1_US_FNAL'], 'TotalSysCpuTimeHistory': [26.0]}, '27': {'Retries': 0, 'WallDurations': [9.0, 309.0], 'StartTimes': [1501857717.0], 'SubmitTimes': [1501857410.0], 'JobIds': ['8526941.0'], 'EndTimes': [], 'Restarts': 0, 'RecordedSite': True, 'State': 'running', 'ResidentSetSize': [1873500], 'TotalUserCpuTimeHistory': [838.0], 'SiteHistory': ['Unknown', 'T1_US_FNAL'], 'TotalSysCpuTimeHistory': [28.0]}, '20': {'Retries': 0, 'WallDurations': [9.0, 309.0], 'StartTimes': [1501857717.0], 'SubmitTimes': [1501857410.0], 'JobIds': ['8526936.0'], 'EndTimes': [], 'Restarts': 0, 'RecordedSite': True, 'State': 'running', 'ResidentSetSize': [1934668], 'TotalUserCpuTimeHistory': [756.0], 'SiteHistory': ['Unknown', 'T1_US_FNAL'], 'TotalSysCpuTimeHistory': [29.0]}, '21': {'Retries': 0, 'WallDurations': [9.0, 309.0], 'StartTimes': [1501857700.0], 'SubmitTimes': [1501857422.0], 'JobIds': ['8526963.0'], 'EndTimes': [], 'Restarts': 0, 'RecordedSite': True, 'State': 'running', 'ResidentSetSize': [1879632], 'TotalUserCpuTimeHistory': [906.0], 'SiteHistory': ['Unknown', 'T1_US_FNAL'], 'TotalSysCpuTimeHistory': [35.0]}, '22': {'Retries': 0, 'WallDurations': [9.0, 309.0], 'StartTimes': [1501857700.0], 'SubmitTimes': [1501857410.0], 'JobIds': ['8526939.0'], 'EndTimes': [], 'Restarts': 0, 'RecordedSite': True, 'State': 'running', 'ResidentSetSize': [1939096], 'TotalUserCpuTimeHistory': [931.0], 'SiteHistory': ['Unknown', 'T1_US_FNAL'], 'TotalSysCpuTimeHistory': [32.0]}, '23': {'Retries': 0, 'WallDurations': [9.0, 309.0], 'StartTimes': [1501857734.0], 'SubmitTimes': [1501857410.0], 'JobIds': ['8526940.0'], 'EndTimes': [], 'Restarts': 0, 'RecordedSite': True, 'State': 'running', 'ResidentSetSize': [1771552], 'TotalUserCpuTimeHistory': [925.0], 'SiteHistory': ['Unknown', 'T1_US_FNAL'], 'TotalSysCpuTimeHistory': [32.0]}, '28': {'Retries': 0, 'WallDurations': [9.0, 309.0], 'StartTimes': [1501857716.0], 'SubmitTimes': [1501857410.0], 'JobIds': ['8526943.0'], 'EndTimes': [], 'Restarts': 0, 'RecordedSite': True, 'State': 'running', 'ResidentSetSize': [1893732], 'TotalUserCpuTimeHistory': [793.0], 'SiteHistory': ['Unknown', 'T1_US_FNAL'], 'TotalSysCpuTimeHistory': [28.0]}, '29': {'Retries': 0, 'WallDurations': [10.0, 310.0], 'StartTimes': [1501857701.0], 'SubmitTimes': [1501857411.0], 'JobIds': ['8526946.0'], 'EndTimes': [], 'Restarts': 0, 'RecordedSite': True, 'State': 'running', 'ResidentSetSize': [1985084], 'TotalUserCpuTimeHistory': [857.0], 'SiteHistory': ['Unknown', 'T1_US_FNAL'], 'TotalSysCpuTimeHistory': [31.0]}, '40': {'Retries': 0, 'WallDurations': [10.0, 311.0], 'StartTimes': [1501857735.0], 'SubmitTimes': [1501857423.0], 'JobIds': ['8526964.0'], 'EndTimes': [], 'Restarts': 0, 'RecordedSite': True, 'State': 'running', 'ResidentSetSize': [1937728], 'TotalUserCpuTimeHistory': [772.0], 'SiteHistory': ['Unknown', 'T1_US_FNAL'], 'TotalSysCpuTimeHistory': [29.0]}, '1': {'Retries': 0, 'WallDurations': [9.0, 15.593283891677856], 'StartTimes': [1501858046.0], 'SubmitTimes': [1501857399.0], 'JobIds': ['8526913.0'], 'EndTimes': [], 'Restarts': 0, 'RecordedSite': True, 'State': 'running', 'ResidentSetSize': [128428], 'TotalUserCpuTimeHistory': [1.0], 'SiteHistory': ['Unknown', 'T1_US_FNAL'], 'TotalSysCpuTimeHistory': [0.0]}, '3': {'Retries': 0, 'WallDurations': [0], 'StartTimes': [], 'SubmitTimes': [1501857401.0], 'JobIds': ['8526917.0'], 'EndTimes': [], 'Restarts': 0, 'RecordedSite': False, 'State': 'idle', 'ResidentSetSize': [0], 'TotalUserCpuTimeHistory': [0.0], 'SiteHistory': ['Unknown'], 'TotalSysCpuTimeHistory': [0.0]}, '2': {'Retries': 0, 'WallDurations': [0], 'StartTimes': [], 'SubmitTimes': [1501857400.0], 'JobIds': ['8526915.0'], 'EndTimes': [], 'Restarts': 0, 'RecordedSite': False, 'State': 'idle', 'ResidentSetSize': [0], 'TotalUserCpuTimeHistory': [0.0], 'SiteHistory': ['Unknown'], 'TotalSysCpuTimeHistory': [0.0]}, '5': {'Retries': 0, 'WallDurations': [9.0, 173.59328389167786], 'StartTimes': [1501857888.0], 'SubmitTimes': [1501857401.0], 'JobIds': ['8526921.0'], 'EndTimes': [], 'Restarts': 0, 'RecordedSite': True, 'State': 'running', 'ResidentSetSize': [2728], 'TotalUserCpuTimeHistory': [0.0], 'SiteHistory': ['Unknown', 'T1_US_FNAL'], 'TotalSysCpuTimeHistory': [0.0]}, '4': {'Retries': 0, 'WallDurations': [9.0, 173.59328389167786], 'StartTimes': [1501857888.0], 'SubmitTimes': [1501857401.0], 'JobIds': ['8526919.0'], 'EndTimes': [], 'Restarts': 0, 'RecordedSite': True, 'State': 'running', 'ResidentSetSize': [2728], 'TotalUserCpuTimeHistory': [0.0], 'SiteHistory': ['Unknown', 'T1_US_FNAL'], 'TotalSysCpuTimeHistory': [0.0]}, '7': {'Retries': 0, 'WallDurations': [11.0, 311.0], 'StartTimes': [1501857704.0], 'SubmitTimes': [1501857403.0], 'JobIds': ['8526926.0'], 'EndTimes': [], 'Restarts': 0, 'RecordedSite': True, 'State': 'running', 'ResidentSetSize': [1928692], 'TotalUserCpuTimeHistory': [731.0], 'SiteHistory': ['Unknown', 'T1_US_FNAL'], 'TotalSysCpuTimeHistory': [54.0]}, '6': {'Retries': 0, 'WallDurations': [9.0, 309.0], 'StartTimes': [1501857693.0], 'SubmitTimes': [1501857401.0], 'JobIds': ['8526923.0'], 'EndTimes': [], 'Restarts': 0, 'RecordedSite': True, 'State': 'running', 'ResidentSetSize': [1896516], 'TotalUserCpuTimeHistory': [787.0], 'SiteHistory': ['Unknown', 'T1_US_FNAL'], 'TotalSysCpuTimeHistory': [25.0]}, '9': {'Retries': 0, 'WallDurations': [9.0, 309.0], 'StartTimes': [1501857700.0], 'SubmitTimes': [1501857403.0], 'JobIds': ['8526927.0'], 'EndTimes': [], 'Restarts': 0, 'RecordedSite': True, 'State': 'running', 'ResidentSetSize': [1967288], 'TotalUserCpuTimeHistory': [764.0], 'SiteHistory': ['Unknown', 'T1_US_FNAL'], 'TotalSysCpuTimeHistory': [27.0]}, '8': {'Retries': 0, 'WallDurations': [9.0, 309.0], 'StartTimes': [1501857693.0], 'SubmitTimes': [1501857399.0], 'JobIds': ['8526911.0'], 'EndTimes': [], 'Restarts': 0, 'RecordedSite': True, 'State': 'running', 'ResidentSetSize': [1883664], 'TotalUserCpuTimeHistory': [689.0], 'SiteHistory': ['Unknown', 'T1_US_FNAL'], 'TotalSysCpuTimeHistory': [31.0]}, '13': {'Retries': 0, 'WallDurations': [10.0, 311.0], 'StartTimes': [1501857715.0], 'SubmitTimes': [1501857403.0], 'JobIds': ['8526931.0'], 'EndTimes': [], 'Restarts': 0, 'RecordedSite': True, 'State': 'running', 'ResidentSetSize': [1791180], 'TotalUserCpuTimeHistory': [681.0], 'SiteHistory': ['Unknown', 'T1_US_FNAL'], 'TotalSysCpuTimeHistory': [28.0]}, '12': {'Retries': 0, 'WallDurations': [9.0, 309.0], 'StartTimes': [1501857701.0], 'SubmitTimes': [1501857403.0], 'JobIds': ['8526930.0'], 'EndTimes': [], 'Restarts': 0, 'RecordedSite': True, 'State': 'running', 'ResidentSetSize': [1945888], 'TotalUserCpuTimeHistory': [702.0], 'SiteHistory': ['Unknown', 'T1_US_FNAL'], 'TotalSysCpuTimeHistory': [30.0]}, '11': {'Retries': 0, 'WallDurations': [10.0, 311.0], 'StartTimes': [1501857694.0], 'SubmitTimes': [1501857403.0], 'JobIds': ['8526929.0'], 'EndTimes': [], 'Restarts': 0, 'RecordedSite': True, 'State': 'running', 'ResidentSetSize': [1927580], 'TotalUserCpuTimeHistory': [743.0], 'SiteHistory': ['Unknown', 'T1_US_FNAL'], 'TotalSysCpuTimeHistory': [28.0]}, '10': {'Retries': 0, 'WallDurations': [10.0, 358.0], 'StartTimes': [1501857697.0], 'SubmitTimes': [1501857403.0], 'JobIds': ['8526928.0'], 'EndTimes': [1501858055.0], 'Restarts': 0, 'RecordedSite': True, 'State': 'transferring', 'ResidentSetSize': [1842360], 'TotalUserCpuTimeHistory': [1030], 'SiteHistory': ['Unknown', 'T1_US_FNAL'], 'TotalSysCpuTimeHistory': [39]}, '39': {'Retries': 0, 'WallDurations': [9.0, 310.0], 'StartTimes': [1501857700.0], 'SubmitTimes': [1501857415.0], 'JobIds': ['8526954.0'], 'EndTimes': [], 'Restarts': 0, 'RecordedSite': True, 'State': 'running', 'ResidentSetSize': [1848260], 'TotalUserCpuTimeHistory': [785.0], 'SiteHistory': ['Unknown', 'T1_US_FNAL'], 'TotalSysCpuTimeHistory': [30.0]}, '38': {'Retries': 0, 'WallDurations': [10.0, 311.0], 'StartTimes': [1501857715.0], 'SubmitTimes': [1501857416.0], 'JobIds': ['8526958.0'], 'EndTimes': [], 'Restarts': 0, 'RecordedSite': True, 'State': 'running', 'ResidentSetSize': [1840328], 'TotalUserCpuTimeHistory': [583.0], 'SiteHistory': ['Unknown', 'T1_US_FNAL'], 'TotalSysCpuTimeHistory': [70.0]}, '15': {'Retries': 0, 'WallDurations': [9.0, 309.0], 'StartTimes': [1501857700.0], 'SubmitTimes': [1501857404.0], 'JobIds': ['8526933.0'], 'EndTimes': [], 'Restarts': 0, 'RecordedSite': True, 'State': 'running', 'ResidentSetSize': [1831240], 'TotalUserCpuTimeHistory': [636.0], 'SiteHistory': ['Unknown', 'T1_US_FNAL'], 'TotalSysCpuTimeHistory': [28.0]}, '14': {'Retries': 0, 'WallDurations': [9.0, 309.0], 'StartTimes': [1501857717.0], 'SubmitTimes': [1501857403.0], 'JobIds': ['8526932.0'], 'EndTimes': [], 'Restarts': 0, 'RecordedSite': True, 'State': 'running', 'ResidentSetSize': [1916776], 'TotalUserCpuTimeHistory': [728.0], 'SiteHistory': ['Unknown', 'T1_US_FNAL'], 'TotalSysCpuTimeHistory': [31.0]}, '17': {'Retries': 0, 'WallDurations': [9.0, 293.0], 'StartTimes': [1501857716.0], 'SubmitTimes': [1501857410.0], 'JobIds': ['8526937.0'], 'EndTimes': [1501858009.0], 'Restarts': 0, 'RecordedSite': True, 'State': 'transferring', 'ResidentSetSize': [139788], 'TotalUserCpuTimeHistory': [761], 'SiteHistory': ['Unknown', 'T1_US_FNAL'], 'TotalSysCpuTimeHistory': [27]}, '16': {'Retries': 0, 'WallDurations': [9.0, 345.0], 'StartTimes': [1501857693.0], 'SubmitTimes': [1501857404.0], 'JobIds': ['8526934.0'], 'EndTimes': [1501858038.0], 'Restarts': 0, 'RecordedSite': True, 'State': 'transferring', 'ResidentSetSize': [1920544], 'TotalUserCpuTimeHistory': [899], 'SiteHistory': ['Unknown', 'T1_US_FNAL'], 'TotalSysCpuTimeHistory': [36]}, '19': {'Retries': 0, 'WallDurations': [9.0, 293.0], 'StartTimes': [1501857695.0], 'SubmitTimes': [1501857410.0], 'JobIds': ['8526938.0'], 'EndTimes': [1501857988.0], 'Restarts': 0, 'RecordedSite': True, 'State': 'transferring', 'ResidentSetSize': [19436], 'TotalUserCpuTimeHistory': [713], 'SiteHistory': ['Unknown', 'T1_US_FNAL'], 'TotalSysCpuTimeHistory': [28]}, '18': {'Retries': 0, 'WallDurations': [9.0, 309.0], 'StartTimes': [1501857700.0], 'SubmitTimes': [1501857405.0], 'JobIds': ['8526935.0'], 'EndTimes': [], 'Restarts': 0, 'RecordedSite': True, 'State': 'running', 'ResidentSetSize': [1957840], 'TotalUserCpuTimeHistory': [906.0], 'SiteHistory': ['Unknown', 'T1_US_FNAL'], 'TotalSysCpuTimeHistory': [30.0]}, '31': {'Retries': 0, 'WallDurations': [10.0, 312.0], 'StartTimes': [1501857715.0], 'SubmitTimes': [1501857412.0], 'JobIds': ['8526950.0'], 'EndTimes': [], 'Restarts': 0, 'RecordedSite': True, 'State': 'running', 'ResidentSetSize': [1918152], 'TotalUserCpuTimeHistory': [909.0], 'SiteHistory': ['Unknown', 'T1_US_FNAL'], 'TotalSysCpuTimeHistory': [28.0]}, '30': {'Retries': 0, 'WallDurations': [9.0, 310.0], 'StartTimes': [1501857732.0], 'SubmitTimes': [1501857411.0], 'JobIds': ['8526947.0'], 'EndTimes': [], 'Restarts': 0, 'RecordedSite': True, 'State': 'running', 'ResidentSetSize': [1971944], 'TotalUserCpuTimeHistory': [865.0], 'SiteHistory': ['Unknown', 'T1_US_FNAL'], 'TotalSysCpuTimeHistory': [29.0]}, '37': {'Retries': 0, 'WallDurations': [9.0, 311.0], 'StartTimes': [1501857693.0], 'SubmitTimes': [1501857421.0], 'JobIds': ['8526962.0'], 'EndTimes': [], 'Restarts': 0, 'RecordedSite': True, 'State': 'running', 'ResidentSetSize': [1810772], 'TotalUserCpuTimeHistory': [930.0], 'SiteHistory': ['Unknown', 'T1_US_FNAL'], 'TotalSysCpuTimeHistory': [33.0]}, '36': {'Retries': 0, 'WallDurations': [9.0, 309.0], 'StartTimes': [1501857701.0], 'SubmitTimes': [1501857414.0], 'JobIds': ['8526952.0'], 'EndTimes': [], 'Restarts': 0, 'RecordedSite': True, 'State': 'running', 'ResidentSetSize': [1867324], 'TotalUserCpuTimeHistory': [736.0], 'SiteHistory': ['Unknown', 'T1_US_FNAL'], 'TotalSysCpuTimeHistory': [24.0]}, '35': {'Retries': 0, 'WallDurations': [10.0, 310.0], 'StartTimes': [1501857734.0], 'SubmitTimes': [1501857415.0], 'JobIds': ['8526956.0'], 'EndTimes': [], 'Restarts': 0, 'RecordedSite': True, 'State': 'running', 'ResidentSetSize': [1930884], 'TotalUserCpuTimeHistory': [752.0], 'SiteHistory': ['Unknown', 'T1_US_FNAL'], 'TotalSysCpuTimeHistory': [29.0]}, '34': {'Retries': 0, 'WallDurations': [9.0, 309.0], 'StartTimes': [1501857716.0], 'SubmitTimes': [1501857411.0], 'JobIds': ['8526949.0'], 'EndTimes': [], 'Restarts': 0, 'RecordedSite': True, 'State': 'running', 'ResidentSetSize': [1865092], 'TotalUserCpuTimeHistory': [752.0], 'SiteHistory': ['Unknown', 'T1_US_FNAL'], 'TotalSysCpuTimeHistory': [41.0]}, '33': {'Retries': 0, 'WallDurations': [10.0, 311.0], 'StartTimes': [1501857734.0], 'SubmitTimes': [1501857411.0], 'JobIds': ['8526948.0'], 'EndTimes': [], 'Restarts': 0, 'RecordedSite': True, 'State': 'running', 'ResidentSetSize': [1911884], 'TotalUserCpuTimeHistory': [871.0], 'SiteHistory': ['Unknown', 'T1_US_FNAL'], 'TotalSysCpuTimeHistory': [31.0]}, '32': {'Retries': 0, 'WallDurations': [9.0, 309.0], 'StartTimes': [1501857717.0], 'SubmitTimes': [1501857413.0], 'JobIds': ['8526951.0'], 'EndTimes': [], 'Restarts': 0, 'RecordedSite': True, 'State': 'running', 'ResidentSetSize': [1929808], 'TotalUserCpuTimeHistory': [281.0], 'SiteHistory': ['Unknown', 'T1_US_FNAL'], 'TotalSysCpuTimeHistory': [107.0]}}
+INFO 2017-08-04 16:51:44,671: 	 Status on the scheduler:	SUBMITTED
+INFO 2017-08-04 16:51:44,672: 	 
+Jobs status:                    idle            5.0% ( 2/40)
+INFO 2017-08-04 16:51:44,672: 	 				running        85.0% (34/40)
+INFO 2017-08-04 16:51:44,672: 	 				transferring   10.0% ( 4/40)
+INFO 2017-08-04 16:51:44,672: 	 
+No publication information (publication has been disabled in the CRAB configuration file)
+INFO 2017-08-04 16:51:44,685: 	 Log file is /afs/cern.ch/user/l/lewang/Xudong/hltphysicsrate/CMSSW_9_2_6/src/SteamRates/crab_HLTPhysics_Run299420_v2p1V4_PS1p4e34_20170802_V2/crab_HLTPhysics1/crab.log
+DEBUG 2017-08-05 06:24:29,207: 	 Executing command: 'status'
+DEBUG 2017-08-05 06:24:29,208: 	 Found CRAB cache file /afs/cern.ch/user/l/lewang/.crab3
+DEBUG 2017-08-05 06:24:29,234: 	 Checking credentials
+DEBUG 2017-08-05 06:24:29,235: 	 Proxy file /tmp/x509up_u74916 not found
+DEBUG 2017-08-05 06:24:29,235: 	 Creating new proxy for 24:00 hours with VO group '' and VO role 'NULL'.
+DEBUG 2017-08-05 06:24:39,473: 	 Executing : 
+ command : voms-proxy-init -voms cms:/cms -valid 24:00 -rfc
+ output : None
+ error: None
+ retcode : 0
+DEBUG 2017-08-05 06:24:40,189: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u74916 -timeleft
+ output : 86397
+
+ error: 
+ retcode : 0
+DEBUG 2017-08-05 06:24:40,800: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u74916 -actimeleft
+ output : 86397
+
+ error: 
+ retcode : 0
+DEBUG 2017-08-05 06:24:41,523: 	 Executing : 
+ command : env X509_USER_PROXY=/tmp/x509up_u74916 voms-proxy-info -fqan
+ output : /cms/Role=NULL/Capability=NULL
+
+ error: 
+ retcode : 0
+DEBUG 2017-08-05 06:24:41,524: 	 Proxy created.
+DEBUG 2017-08-05 06:24:41,703: 	 Executing : 
+ command : openssl x509 -in ~/.globus/usercert.pem -subject -noout
+ output : subject= /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=lewang/CN=763351/CN=Lei Wang
+
+ error: 
+ retcode : 0
+DEBUG 2017-08-05 06:24:41,703: 	 Checking credentials
+DEBUG 2017-08-05 06:24:41,704: 	 Found proxy file /tmp/x509up_u74916
+DEBUG 2017-08-05 06:24:41,704: 	 Getting proxy life time left
+DEBUG 2017-08-05 06:24:42,422: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u74916 -timeleft
+ output : 86395
+
+ error: 
+ retcode : 0
+DEBUG 2017-08-05 06:24:43,348: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u74916 -actimeleft
+ output : 86394
+
+ error: 
+ retcode : 0
+DEBUG 2017-08-05 06:24:43,348: 	 Proxy valid for 23:59:55 hours
+DEBUG 2017-08-05 06:24:43,733: 	 Registering user credentials for server /DC=ch/DC=cern/OU=computers/CN=vocms(045|052|021|031|0118|0118a|0119|0108|0105|0109).cern.ch
+DEBUG 2017-08-05 06:24:43,847: 	 Executing : 
+ command : openssl x509 -in ~/.globus/usercert.pem -subject -noout
+ output : subject= /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=lewang/CN=763351/CN=Lei Wang
+
+ error: 
+ retcode : 0
+DEBUG 2017-08-05 06:24:43,847: 	 Getting myproxy life time left for myproxy.cern.ch
+DEBUG 2017-08-05 06:24:43,847: 	 Calculating hash of /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=lewang/CN=763351/CN=Lei Wang_cmsweb.cern.ch for credential name
+DEBUG 2017-08-05 06:24:44,254: 	 Executing : 
+ command : myproxy-info -l 1b9ed1fd5af45f6b0603ad12c45a57a42d266ac3 -s myproxy.cern.ch
+ output : username: 1b9ed1fd5af45f6b0603ad12c45a57a42d266ac3
+owner: /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=lewang/CN=763351/CN=Lei Wang
+  renewal policy: /DC=ch/DC=cern/OU=computers/CN=vocms(045|052|021|031|0118|0118a|0119|0108|0105|0109).cern.ch
+  trusted retrieval policy: /DC=ch/DC=cern/OU=computers/CN=vocms(045|052|021|031|0118|0118a|0119|0108|0105|0109).cern.ch
+  timeleft: 692:53:37  (28.9 days)
+
+ error: 
+ retcode : 0
+DEBUG 2017-08-05 06:24:44,256: 	 Myproxy is valid: 2494417
+DEBUG 2017-08-05 06:24:44,256: 	 Command use: status
+DEBUG 2017-08-05 06:24:44,256: 	 Options use: ['-d', 'crab_HLTPhysics_Run299420_v2p1V4_PS1p4e34_20170802_V2/crab_HLTPhysics1/']
+DEBUG 2017-08-05 06:24:44,650: 	 CRABClient version: 3.3.1707.patch1
+DEBUG 2017-08-05 06:24:44,650: 	 Instance is prod
+DEBUG 2017-08-05 06:24:44,650: 	 Server base url is cmsweb.cern.ch
+DEBUG 2017-08-05 06:24:44,650: 	 Command url /crabserver/prod/workflow
+DEBUG 2017-08-05 06:24:45,031: 	 Got information from server oracle database: {u'result': [u'170804_143438:lewang_crab_HLTPhysics1', u'None', u'SUBMITTED', u'2017-08-04 14:34:38.427171', u'None', u'2017-08-04 14:36:09.353386', u'None', u'CMSSW_9_2_6', u'slc6_amd64_gcc530', u'/ParkingHLTPhysics1/Run2017C-v1/RAW', u'[]', u'[]', u'EventAwareLumiBased', u"{'splitOnRun': False, 'events_per_job': 5000, 'halt_job_on_file_boundaries': False, 'runs': ['299420'], 'lumis': ['11,50']}", u'-1', u'4c1f1967ded8a27e2abc2bf8f3fceec37ed121044716c75e24d0eeff0ec64bd5.tar.gz', u'https://cmsweb.cern.ch/crabcache', u'lewang', u'/DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=lewang/CN=763351/CN=Lei Wang', u'cms', u'None', u'None', u'HLTPhysics_Run299420_v2p1V4_PS1p4e34_20170802_V2_HLTPhysics1-00000000000000000000000000000000', u'T2_CH_CERN', u'https://cmsweb.cern.ch/dbs/prod/global/DBSReader', u'https://cmsweb.cern.ch/dbs/prod/phys03/DBSWriter', u'F', u'Analysis', u'{}', u'[]', u'T', u'vocms052', u'[]', u'1250', u'4', u'3000', u'10', u"['/ParkingHLTPhysics1/lewang-HLTPhysics_Run299420_v2p1V4_PS1p4e34_20170802_V2_HLTPhysics1-6823583df2a59d0ce8cd9af76821c339/USER']", u'http://vocms0197.cern.ch/mon/cms1522/170804_143438:lewang_crab_HLTPhysics1', u'None', u'None', u'[]', u'[]', u"['Task requests 3000 MB of memory, but only 2500 MB are guaranteed to be available. Jobs may not find a site where to run and stay idle forever.']", u'pythia', u'[]', u'[]', u"['hlt.root']", u'https://cmsweb.cern.ch/crabserver/prod', u'None', u'0', u'cmsgwms-collector-global.cern.ch:9620,cmssrv221.fnal.gov:9620', u'crab3@vocms0197.cern.ch', u'F', u'[]', u'T', u'/store/group/dpg_trigger/comm_trigger/TriggerStudiesGroup/STEAM/xulyu//HLTPhysics_Run299420_v2p1V4_PS1p4e34_20170802_V2/', u'F', u'None', u'F', u'F', u'F', u'None', u'ParkingHLTPhysics1', u'filetransfers', u'SUBMIT', u'8526902', u'086c843d38cd59112fbdaf1b5eff7c830270b87d59699eb83bb77602af5b0339.tar.gz', u'188.184.93.246', u'F', u'None'], u'desc': {u'columns': [u'tm_taskname', u'panda_jobset_id', u'tm_task_status', u'tm_start_time', u'tm_start_injection', u'tm_end_injection', u'tm_task_failure', u'tm_job_sw', u'tm_job_arch', u'tm_input_dataset', u'tm_site_whitelist', u'tm_site_blacklist', u'tm_split_algo', u'tm_split_args', u'tm_totalunits', u'tm_user_sandbox', u'tm_cache_url', u'tm_username', u'tm_user_dn', u'tm_user_vo', u'tm_user_role', u'tm_user_group', u'tm_publish_name', u'tm_asyncdest', u'tm_dbs_url', u'tm_publish_dbs_url', u'tm_publication', u'tm_job_type', u'tm_arguments', u'panda_resubmitted_jobs', u'tm_save_logs', u'tw_name', u'tm_user_infiles', u'tm_maxjobruntime', u'tm_numcores', u'tm_maxmemory', u'tm_priority', u'tm_output_dataset', u'tm_user_webdir', u'tm_activity', u'tm_scriptexe', u'tm_scriptargs', u'tm_extrajdl', u'tm_task_warnings', u'tm_generator', u'tm_outfiles', u'tm_tfile_outfiles', u'tm_edm_outfiles', u'tm_asourl', u'tm_events_per_lumi', u'tm_use_parent', u'tm_collector', u'tm_schedd', u'tm_dry_run', u'tm_user_files', u'tm_transfer_outputs', u'tm_output_lfn', u'tm_ignore_locality', u'tm_fail_limit', u'tm_one_event_mode', u'tm_publish_groupname', u'tm_nonvalid_input_dataset', u'tm_secondary_input_dataset', u'tm_primary_dataset', u'tm_asodb', u'tm_task_command', u'clusterid', u'tm_debug_files', u'tm_submitter_ip_addr', u'tm_ignore_global_blacklist', u'tm_last_publication']}}
+INFO 2017-08-05 06:24:45,032: 	 CRAB project directory:		/afs/cern.ch/user/l/lewang/Xudong/hltphysicsrate/CMSSW_9_2_6/src/SteamRates/crab_HLTPhysics_Run299420_v2p1V4_PS1p4e34_20170802_V2/crab_HLTPhysics1
+INFO 2017-08-05 06:24:45,032: 	 Task name:			170804_143438:lewang_crab_HLTPhysics1
+INFO 2017-08-05 06:24:45,032: 	 Grid scheduler:			crab3@vocms0197.cern.ch
+INFO 2017-08-05 06:24:45,032: 	 Status on the CRAB server:	SUBMITTED
+INFO 2017-08-05 06:24:45,033: 	 Task URL to use for HELP:	https://cmsweb.cern.ch/crabserver/ui/task/170804_143438%3Alewang_crab_HLTPhysics1
+INFO 2017-08-05 06:24:45,033: 	 Dashboard monitoring URL:	http://dashb-cms-job.cern.ch/dashboard/templates/task-analysis/#user=lewang&refresh=0&table=Jobs&p=1&records=25&activemenu=2&status=&site=&tid=170804_143438%3Alewang_crab_HLTPhysics1
+WARNING 2017-08-05 06:24:45,033: 	 Warning:			Task requests 3000 MB of memory, but only 2500 MB are guaranteed to be available. Jobs may not find a site where to run and stay idle forever.
+DEBUG 2017-08-05 06:24:45,033: 	 The CRAB server submitted your task to the Grid scheduler (cluster ID: 8526902)
+DEBUG 2017-08-05 06:24:45,033: 	 Webdir is located at http://vocms0197.cern.ch/mon/cms1522/170804_143438:lewang_crab_HLTPhysics1
+DEBUG 2017-08-05 06:24:45,535: 	 Proxied webdir is located at https://cmsweb.cern.ch/scheddmon/0197/cms1522/170804_143438:lewang_crab_HLTPhysics1
+DEBUG 2017-08-05 06:24:45,535: 	 Retrieving 'status_cache' file from https://cmsweb.cern.ch/scheddmon/0197/cms1522/170804_143438:lewang_crab_HLTPhysics1/status_cache
+DEBUG 2017-08-05 06:24:45,862: 	 Got information from status cache file: {'24': {'Retries': 0, 'WallDurations': [9.0, 376.0], 'StartTimes': [1501857700.0], 'SubmitTimes': [1501857411.0], 'JobIds': ['8526944.0'], 'EndTimes': [1501858076.0], 'Restarts': 0, 'RecordedSite': True, 'State': 'finished', 'ResidentSetSize': [1884832], 'TotalUserCpuTimeHistory': [1075], 'SiteHistory': ['Unknown', 'T1_US_FNAL'], 'TotalSysCpuTimeHistory': [35]}, '25': {'Retries': 0, 'WallDurations': [10.0, 662.0], 'StartTimes': [1501857715.0], 'SubmitTimes': [1501857410.0], 'JobIds': ['8526942.0'], 'EndTimes': [1501858377.0], 'Restarts': 0, 'RecordedSite': True, 'State': 'finished', 'ResidentSetSize': [1943952], 'TotalUserCpuTimeHistory': [1918], 'SiteHistory': ['Unknown', 'T1_US_FNAL'], 'TotalSysCpuTimeHistory': [69]}, '26': {'Retries': 0, 'WallDurations': [9.0, 580.0], 'StartTimes': [1501857716.0], 'SubmitTimes': [1501857411.0], 'JobIds': ['8526945.0'], 'EndTimes': [1501858296.0], 'Restarts': 0, 'RecordedSite': True, 'State': 'finished', 'ResidentSetSize': [1801184], 'TotalUserCpuTimeHistory': [1656], 'SiteHistory': ['Unknown', 'T1_US_FNAL'], 'TotalSysCpuTimeHistory': [56]}, '27': {'Retries': 0, 'WallDurations': [9.0, 368.0], 'StartTimes': [1501857717.0], 'SubmitTimes': [1501857410.0], 'JobIds': ['8526941.0'], 'EndTimes': [1501858085.0], 'Restarts': 0, 'RecordedSite': True, 'State': 'finished', 'ResidentSetSize': [1873500], 'TotalUserCpuTimeHistory': [1009], 'SiteHistory': ['Unknown', 'T1_US_FNAL'], 'TotalSysCpuTimeHistory': [33]}, '20': {'Retries': 0, 'WallDurations': [9.0, 642.0], 'StartTimes': [1501857717.0], 'SubmitTimes': [1501857410.0], 'JobIds': ['8526936.0'], 'EndTimes': [1501858359.0], 'Restarts': 0, 'RecordedSite': True, 'State': 'finished', 'ResidentSetSize': [1991596], 'TotalUserCpuTimeHistory': [1910], 'SiteHistory': ['Unknown', 'T1_US_FNAL'], 'TotalSysCpuTimeHistory': [67]}, '21': {'Retries': 0, 'WallDurations': [9.0, 388.0], 'StartTimes': [1501857700.0], 'SubmitTimes': [1501857422.0], 'JobIds': ['8526963.0'], 'EndTimes': [1501858088.0], 'Restarts': 0, 'RecordedSite': True, 'State': 'finished', 'ResidentSetSize': [1879632], 'TotalUserCpuTimeHistory': [1139], 'SiteHistory': ['Unknown', 'T1_US_FNAL'], 'TotalSysCpuTimeHistory': [47]}, '22': {'Retries': 0, 'WallDurations': [9.0, 378.0], 'StartTimes': [1501857700.0], 'SubmitTimes': [1501857410.0], 'JobIds': ['8526939.0'], 'EndTimes': [1501858078.0], 'Restarts': 0, 'RecordedSite': True, 'State': 'finished', 'ResidentSetSize': [1939096], 'TotalUserCpuTimeHistory': [1100], 'SiteHistory': ['Unknown', 'T1_US_FNAL'], 'TotalSysCpuTimeHistory': [37]}, '23': {'Retries': 0, 'WallDurations': [9.0, 414.0], 'StartTimes': [1501857734.0], 'SubmitTimes': [1501857410.0], 'JobIds': ['8526940.0'], 'EndTimes': [1501858148.0], 'Restarts': 0, 'RecordedSite': True, 'State': 'finished', 'ResidentSetSize': [1771552], 'TotalUserCpuTimeHistory': [1211], 'SiteHistory': ['Unknown', 'T1_US_FNAL'], 'TotalSysCpuTimeHistory': [41]}, '28': {'Retries': 0, 'WallDurations': [9.0, 548.0], 'StartTimes': [1501857716.0], 'SubmitTimes': [1501857410.0], 'JobIds': ['8526943.0'], 'EndTimes': [1501858264.0], 'Restarts': 0, 'RecordedSite': True, 'State': 'finished', 'ResidentSetSize': [1893732], 'TotalUserCpuTimeHistory': [1576], 'SiteHistory': ['Unknown', 'T1_US_FNAL'], 'TotalSysCpuTimeHistory': [59]}, '29': {'Retries': 0, 'WallDurations': [10.0, 413.0], 'StartTimes': [1501857701.0], 'SubmitTimes': [1501857411.0], 'JobIds': ['8526946.0'], 'EndTimes': [1501858114.0], 'Restarts': 0, 'RecordedSite': True, 'State': 'finished', 'ResidentSetSize': [1985084], 'TotalUserCpuTimeHistory': [1190], 'SiteHistory': ['Unknown', 'T1_US_FNAL'], 'TotalSysCpuTimeHistory': [41]}, '40': {'Retries': 0, 'WallDurations': [10.0, 638.0], 'StartTimes': [1501857735.0], 'SubmitTimes': [1501857423.0], 'JobIds': ['8526964.0'], 'EndTimes': [1501858373.0], 'Restarts': 0, 'RecordedSite': True, 'State': 'finished', 'ResidentSetSize': [1937728], 'TotalUserCpuTimeHistory': [1871], 'SiteHistory': ['Unknown', 'T1_US_FNAL'], 'TotalSysCpuTimeHistory': [67]}, '1': {'Retries': 0, 'WallDurations': [9.0, 483.0], 'StartTimes': [1501858046.0], 'SubmitTimes': [1501857399.0], 'JobIds': ['8526913.0'], 'EndTimes': [1501858529.0], 'Restarts': 0, 'RecordedSite': True, 'State': 'finished', 'ResidentSetSize': [1882072], 'TotalUserCpuTimeHistory': [1486], 'SiteHistory': ['Unknown', 'T1_US_FNAL'], 'TotalSysCpuTimeHistory': [56]}, '3': {'Retries': 0, 'WallDurations': [10.0, 392.0], 'StartTimes': [1501858064.0], 'SubmitTimes': [1501857401.0], 'JobIds': ['8526917.0'], 'EndTimes': [1501858456.0], 'Restarts': 0, 'RecordedSite': True, 'State': 'finished', 'ResidentSetSize': [2002540], 'TotalUserCpuTimeHistory': [1143], 'SiteHistory': ['Unknown', 'T1_US_FNAL'], 'TotalSysCpuTimeHistory': [43]}, '2': {'Retries': 0, 'WallDurations': [9.0, 304.0], 'StartTimes': [1501858065.0], 'SubmitTimes': [1501857400.0], 'JobIds': ['8526915.0'], 'EndTimes': [1501858369.0], 'Restarts': 0, 'RecordedSite': True, 'State': 'finished', 'ResidentSetSize': [2724], 'TotalUserCpuTimeHistory': [800], 'SiteHistory': ['Unknown', 'T1_US_FNAL'], 'TotalSysCpuTimeHistory': [30]}, '5': {'Retries': 0, 'WallDurations': [9.0, 677.0], 'StartTimes': [1501857888.0], 'SubmitTimes': [1501857401.0], 'JobIds': ['8526921.0'], 'EndTimes': [1501858565.0], 'Restarts': 0, 'RecordedSite': True, 'State': 'finished', 'ResidentSetSize': [1911112], 'TotalUserCpuTimeHistory': [1998], 'SiteHistory': ['Unknown', 'T1_US_FNAL'], 'TotalSysCpuTimeHistory': [79]}, '4': {'Retries': 0, 'WallDurations': [9.0, 596.0], 'StartTimes': [1501857888.0], 'SubmitTimes': [1501857401.0], 'JobIds': ['8526919.0'], 'EndTimes': [1501858484.0], 'Restarts': 0, 'RecordedSite': True, 'State': 'finished', 'ResidentSetSize': [1777080], 'TotalUserCpuTimeHistory': [1750], 'SiteHistory': ['Unknown', 'T1_US_FNAL'], 'TotalSysCpuTimeHistory': [61]}, '7': {'Retries': 0, 'WallDurations': [11.0, 491.0], 'StartTimes': [1501857704.0], 'SubmitTimes': [1501857403.0], 'JobIds': ['8526926.0'], 'EndTimes': [1501858195.0], 'Restarts': 0, 'RecordedSite': True, 'State': 'finished', 'ResidentSetSize': [1928692], 'TotalUserCpuTimeHistory': [1292], 'SiteHistory': ['Unknown', 'T1_US_FNAL'], 'TotalSysCpuTimeHistory': [99]}, '6': {'Retries': 0, 'WallDurations': [9.0, 583.0], 'StartTimes': [1501857693.0], 'SubmitTimes': [1501857401.0], 'JobIds': ['8526923.0'], 'EndTimes': [1501858276.0], 'Restarts': 0, 'RecordedSite': True, 'State': 'finished', 'ResidentSetSize': [1896516], 'TotalUserCpuTimeHistory': [1744], 'SiteHistory': ['Unknown', 'T1_US_FNAL'], 'TotalSysCpuTimeHistory': [53]}, '9': {'Retries': 0, 'WallDurations': [9.0, 475.0], 'StartTimes': [1501857700.0], 'SubmitTimes': [1501857403.0], 'JobIds': ['8526927.0'], 'EndTimes': [1501858175.0], 'Restarts': 0, 'RecordedSite': True, 'State': 'finished', 'ResidentSetSize': [1967288], 'TotalUserCpuTimeHistory': [1268], 'SiteHistory': ['Unknown', 'T1_US_FNAL'], 'TotalSysCpuTimeHistory': [47]}, '8': {'Retries': 0, 'WallDurations': [9.0, 666.0], 'StartTimes': [1501857693.0], 'SubmitTimes': [1501857399.0], 'JobIds': ['8526911.0'], 'EndTimes': [1501858359.0], 'Restarts': 0, 'RecordedSite': True, 'State': 'finished', 'ResidentSetSize': [1923196], 'TotalUserCpuTimeHistory': [1884], 'SiteHistory': ['Unknown', 'T1_US_FNAL'], 'TotalSysCpuTimeHistory': [74]}, '39': {'Retries': 0, 'WallDurations': [9.0, 635.0], 'StartTimes': [1501857700.0], 'SubmitTimes': [1501857415.0], 'JobIds': ['8526954.0'], 'EndTimes': [1501858335.0], 'Restarts': 0, 'RecordedSite': True, 'State': 'finished', 'ResidentSetSize': [1848260], 'TotalUserCpuTimeHistory': [1864], 'SiteHistory': ['Unknown', 'T1_US_FNAL'], 'TotalSysCpuTimeHistory': [70]}, '38': {'Retries': 0, 'WallDurations': [10.0, 752.0], 'StartTimes': [1501857715.0], 'SubmitTimes': [1501857416.0], 'JobIds': ['8526958.0'], 'EndTimes': [1501858467.0], 'Restarts': 0, 'RecordedSite': True, 'State': 'finished', 'ResidentSetSize': [1845524], 'TotalUserCpuTimeHistory': [1952], 'SiteHistory': ['Unknown', 'T1_US_FNAL'], 'TotalSysCpuTimeHistory': [188]}, '11': {'Retries': 0, 'WallDurations': [10.0, 659.0], 'StartTimes': [1501857694.0], 'SubmitTimes': [1501857403.0], 'JobIds': ['8526929.0'], 'EndTimes': [1501858353.0], 'Restarts': 0, 'RecordedSite': True, 'State': 'finished', 'ResidentSetSize': [1927580], 'TotalUserCpuTimeHistory': [1923], 'SiteHistory': ['Unknown', 'T1_US_FNAL'], 'TotalSysCpuTimeHistory': [74]}, '10': {'Retries': 0, 'WallDurations': [10.0, 358.0], 'StartTimes': [1501857697.0], 'SubmitTimes': [1501857403.0], 'JobIds': ['8526928.0'], 'EndTimes': [1501858055.0], 'Restarts': 0, 'RecordedSite': True, 'State': 'finished', 'ResidentSetSize': [1842360], 'TotalUserCpuTimeHistory': [1030], 'SiteHistory': ['Unknown', 'T1_US_FNAL'], 'TotalSysCpuTimeHistory': [39]}, '13': {'Retries': 0, 'WallDurations': [10.0, 729.0], 'StartTimes': [1501857715.0], 'SubmitTimes': [1501857403.0], 'JobIds': ['8526931.0'], 'EndTimes': [1501858444.0], 'Restarts': 0, 'RecordedSite': True, 'State': 'finished', 'ResidentSetSize': [1871600], 'TotalUserCpuTimeHistory': [2104], 'SiteHistory': ['Unknown', 'T1_US_FNAL'], 'TotalSysCpuTimeHistory': [83]}, '12': {'Retries': 0, 'WallDurations': [9.0, 737.0], 'StartTimes': [1501857701.0], 'SubmitTimes': [1501857403.0], 'JobIds': ['8526930.0'], 'EndTimes': [1501858438.0], 'Restarts': 0, 'RecordedSite': True, 'State': 'finished', 'ResidentSetSize': [1945888], 'TotalUserCpuTimeHistory': [2174], 'SiteHistory': ['Unknown', 'T1_US_FNAL'], 'TotalSysCpuTimeHistory': [84]}, '15': {'Retries': 0, 'WallDurations': [9.0, 709.0], 'StartTimes': [1501857700.0], 'SubmitTimes': [1501857404.0], 'JobIds': ['8526933.0'], 'EndTimes': [1501858409.0], 'Restarts': 0, 'RecordedSite': True, 'State': 'finished', 'ResidentSetSize': [1831240], 'TotalUserCpuTimeHistory': [1918], 'SiteHistory': ['Unknown', 'T1_US_FNAL'], 'TotalSysCpuTimeHistory': [76]}, '14': {'Retries': 0, 'WallDurations': [9.0, 461.0], 'StartTimes': [1501857717.0], 'SubmitTimes': [1501857403.0], 'JobIds': ['8526932.0'], 'EndTimes': [1501858178.0], 'Restarts': 0, 'RecordedSite': True, 'State': 'finished', 'ResidentSetSize': [1916776], 'TotalUserCpuTimeHistory': [1184], 'SiteHistory': ['Unknown', 'T1_US_FNAL'], 'TotalSysCpuTimeHistory': [51]}, '17': {'Retries': 0, 'WallDurations': [9.0, 293.0], 'StartTimes': [1501857716.0], 'SubmitTimes': [1501857410.0], 'JobIds': ['8526937.0'], 'EndTimes': [1501858009.0], 'Restarts': 0, 'RecordedSite': True, 'State': 'finished', 'ResidentSetSize': [139788], 'TotalUserCpuTimeHistory': [761], 'SiteHistory': ['Unknown', 'T1_US_FNAL'], 'TotalSysCpuTimeHistory': [27]}, '16': {'Retries': 0, 'WallDurations': [9.0, 345.0], 'StartTimes': [1501857693.0], 'SubmitTimes': [1501857404.0], 'JobIds': ['8526934.0'], 'EndTimes': [1501858038.0], 'Restarts': 0, 'RecordedSite': True, 'State': 'finished', 'ResidentSetSize': [1920544], 'TotalUserCpuTimeHistory': [899], 'SiteHistory': ['Unknown', 'T1_US_FNAL'], 'TotalSysCpuTimeHistory': [36]}, '19': {'Retries': 0, 'WallDurations': [9.0, 293.0], 'StartTimes': [1501857695.0], 'SubmitTimes': [1501857410.0], 'JobIds': ['8526938.0'], 'EndTimes': [1501857988.0], 'Restarts': 0, 'RecordedSite': True, 'State': 'finished', 'ResidentSetSize': [19436], 'TotalUserCpuTimeHistory': [713], 'SiteHistory': ['Unknown', 'T1_US_FNAL'], 'TotalSysCpuTimeHistory': [28]}, '18': {'Retries': 0, 'WallDurations': [9.0, 389.0], 'StartTimes': [1501857700.0], 'SubmitTimes': [1501857405.0], 'JobIds': ['8526935.0'], 'EndTimes': [1501858089.0], 'Restarts': 0, 'RecordedSite': True, 'State': 'finished', 'ResidentSetSize': [1957840], 'TotalUserCpuTimeHistory': [1132], 'SiteHistory': ['Unknown', 'T1_US_FNAL'], 'TotalSysCpuTimeHistory': [37]}, '31': {'Retries': 0, 'WallDurations': [10.0, 412.0], 'StartTimes': [1501857715.0], 'SubmitTimes': [1501857412.0], 'JobIds': ['8526950.0'], 'EndTimes': [1501858127.0], 'Restarts': 0, 'RecordedSite': True, 'State': 'finished', 'ResidentSetSize': [1918152], 'TotalUserCpuTimeHistory': [1227], 'SiteHistory': ['Unknown', 'T1_US_FNAL'], 'TotalSysCpuTimeHistory': [42]}, '30': {'Retries': 0, 'WallDurations': [9.0, 442.0], 'StartTimes': [1501857732.0], 'SubmitTimes': [1501857411.0], 'JobIds': ['8526947.0'], 'EndTimes': [1501858174.0], 'Restarts': 0, 'RecordedSite': True, 'State': 'finished', 'ResidentSetSize': [1971944], 'TotalUserCpuTimeHistory': [1275], 'SiteHistory': ['Unknown', 'T1_US_FNAL'], 'TotalSysCpuTimeHistory': [48]}, '37': {'Retries': 0, 'WallDurations': [9.0, 378.0], 'StartTimes': [1501857693.0], 'SubmitTimes': [1501857421.0], 'JobIds': ['8526962.0'], 'EndTimes': [1501858071.0], 'Restarts': 0, 'RecordedSite': True, 'State': 'finished', 'ResidentSetSize': [1810772], 'TotalUserCpuTimeHistory': [1096], 'SiteHistory': ['Unknown', 'T1_US_FNAL'], 'TotalSysCpuTimeHistory': [38]}, '36': {'Retries': 0, 'WallDurations': [9.0, 646.0], 'StartTimes': [1501857701.0], 'SubmitTimes': [1501857414.0], 'JobIds': ['8526952.0'], 'EndTimes': [1501858347.0], 'Restarts': 0, 'RecordedSite': True, 'State': 'finished', 'ResidentSetSize': [1867324], 'TotalUserCpuTimeHistory': [1898], 'SiteHistory': ['Unknown', 'T1_US_FNAL'], 'TotalSysCpuTimeHistory': [59]}, '35': {'Retries': 0, 'WallDurations': [10.0, 470.0], 'StartTimes': [1501857734.0], 'SubmitTimes': [1501857415.0], 'JobIds': ['8526956.0'], 'EndTimes': [1501858204.0], 'Restarts': 0, 'RecordedSite': True, 'State': 'finished', 'ResidentSetSize': [1930884], 'TotalUserCpuTimeHistory': [1256], 'SiteHistory': ['Unknown', 'T1_US_FNAL'], 'TotalSysCpuTimeHistory': [49]}, '34': {'Retries': 0, 'WallDurations': [9.0, 483.0], 'StartTimes': [1501857716.0], 'SubmitTimes': [1501857411.0], 'JobIds': ['8526949.0'], 'EndTimes': [1501858199.0], 'Restarts': 0, 'RecordedSite': True, 'State': 'finished', 'ResidentSetSize': [1865092], 'TotalUserCpuTimeHistory': [1317], 'SiteHistory': ['Unknown', 'T1_US_FNAL'], 'TotalSysCpuTimeHistory': [70]}, '33': {'Retries': 0, 'WallDurations': [10.0, 381.0], 'StartTimes': [1501857734.0], 'SubmitTimes': [1501857411.0], 'JobIds': ['8526948.0'], 'EndTimes': [1501858115.0], 'Restarts': 0, 'RecordedSite': True, 'State': 'finished', 'ResidentSetSize': [1911884], 'TotalUserCpuTimeHistory': [1094], 'SiteHistory': ['Unknown', 'T1_US_FNAL'], 'TotalSysCpuTimeHistory': [44]}, '32': {'Retries': 0, 'WallDurations': [9.0, 795.0], 'StartTimes': [1501857717.0], 'SubmitTimes': [1501857413.0], 'JobIds': ['8526951.0'], 'EndTimes': [1501858512.0], 'Restarts': 0, 'RecordedSite': True, 'State': 'finished', 'ResidentSetSize': [1929808], 'TotalUserCpuTimeHistory': [1915], 'SiteHistory': ['Unknown', 'T1_US_FNAL'], 'TotalSysCpuTimeHistory': [183]}}
+INFO 2017-08-05 06:24:45,862: 	 Status on the scheduler:	COMPLETED
+INFO 2017-08-05 06:24:45,862: 	 
+Jobs status:                    finished      100.0% (40/40)
+INFO 2017-08-05 06:24:45,863: 	 
+No publication information (publication has been disabled in the CRAB configuration file)
+INFO 2017-08-05 06:24:45,932: 	 Log file is /afs/cern.ch/user/l/lewang/Xudong/hltphysicsrate/CMSSW_9_2_6/src/SteamRates/crab_HLTPhysics_Run299420_v2p1V4_PS1p4e34_20170802_V2/crab_HLTPhysics1/crab.log
